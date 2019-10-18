@@ -4055,3 +4055,3698 @@
 --->  2 issue(s) to fix {u'E127': set([75]), u'E202': set([75])}
 --->  1 issue(s) to fix {u'E202': set([75])}
 --->  0 issue(s) to fix {}
+[file:./compression/burrows_wheeler.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./compression/peak_signal_to_noise_ratio.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  4 issue(s) to fix {'W191': set([2]), 'E101': set([3]), 'E501': set([2, 3])}
+[file:./compression/huffman.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./hashes/sha1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  23 issue(s) to fix {'E501': set([2, 132, 6, 10, 11, 12, 13, 14, 144, 17, 18, 20, 41, 42, 43, 60, 77, 88, 89, 90, 91, 92, 114])}
+[file:./hashes/enigma_machine.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([58])}
+[file:./hashes/md5.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'W503': set([233])}
+[file:./hashes/chaos_machine.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E402': set([88])}
+[file:./machine_learning/polymonial_regression.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  4 issue(s) to fix {'E402': set([18, 19, 12]), 'E501': set([6])}
+[file:./machine_learning/k_means_clust.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  11 issue(s) to fix {'W503': set([166]), 'E402': set([124]), 'E501': set([64, 36, 40, 14, 175, 16, 146, 148, 25])}
+[file:./machine_learning/k_nearest_neighbours.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([29])}
+[file:./machine_learning/logistic_regression.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E501': set([82, 13])}
+[file:./machine_learning/scoring_functions.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./machine_learning/linear_regression.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'W503': set([21, 22])}
+[file:./machine_learning/sequential_minimum_optimization.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  38 issue(s) to fix {u'E231': set([490, 213, 493]), 'W503': set([352, 353, 354, 227, 359, 360, 361, 138, 139, 108, 109, 110, 114, 115, 116, 355, 362]), 'E501': set([194, 3, 5, 595, 278, 44, 594, 366, 593, 242, 243, 277, 22, 153, 91, 478])}
+--->  35 issue(s) to fix {u'E231': set([213, 493]), 'W503': set([352, 353, 354, 227, 359, 360, 361, 138, 139, 108, 109, 110, 114, 115, 116, 355, 362]), 'E501': set([194, 3, 5, 595, 278, 44, 594, 366, 593, 242, 243, 277, 22, 153, 91, 478])}
+--->  33 issue(s) to fix {'W503': set([352, 353, 354, 227, 359, 360, 361, 138, 139, 108, 109, 110, 114, 115, 116, 355, 362]), 'E501': set([194, 3, 5, 595, 278, 44, 594, 366, 593, 242, 243, 277, 22, 153, 91, 478])}
+[file:./machine_learning/gradient_descent.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  5 issue(s) to fix {'E501': set([2, 91, 37, 78, 93])}
+[file:./machine_learning/knn_sklearn.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./machine_learning/decision_tree.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  9 issue(s) to fix {'E501': set([65, 67, 41, 106, 3, 23, 123, 124, 125])}
+[file:./machine_learning/support_vector_machines.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E501': set([33, 22])}
+[file:./machine_learning/dbscan/dbscan.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  13 issue(s) to fix {'E501': set([193, 67, 199, 73, 172, 114, 175, 82, 181, 121, 207, 94, 127])}
+[file:./machine_learning/random_forest_regression/random_forest_regression.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E402': set([28]), 'E501': set([17])}
+[file:./machine_learning/random_forest_classification/random_forest_classification.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  10 issue(s) to fix {'E402': set([41, 76, 46, 16, 23, 30]), 'E501': set([80, 81, 50, 51])}
+[file:./scripts/validate_filenames.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./scripts/build_directory_md.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./arithmetic_analysis/newton_raphson_method.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./arithmetic_analysis/bisection.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./arithmetic_analysis/intersection.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([6])}
+[file:./arithmetic_analysis/newton_method.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./arithmetic_analysis/lu_decomposition.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./arithmetic_analysis/in_static_equilibrium.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./dynamic_programming/fibonacci.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  3 issue(s) to fix {'E501': set([48, 2, 42])}
+[file:./dynamic_programming/k_means_clustering_tensorflow.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E265': set([107]), 'E501': set([110])}
+[file:./dynamic_programming/floyd_warshall.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./dynamic_programming/minimum_partition.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([2])}
+[file:./dynamic_programming/integer_partition.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  3 issue(s) to fix {'E501': set([2, 3, 4])}
+[file:./dynamic_programming/fast_fibonacci.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./dynamic_programming/longest_common_subsequence.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  3 issue(s) to fix {'E266': set([79]), 'E501': set([2, 3])}
+[file:./dynamic_programming/climbing_stairs.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./dynamic_programming/longest_increasing_subsequence_o(nlogn).py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {u'E741': set([15]), 'E501': set([4])}
+[file:./dynamic_programming/knapsack.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  7 issue(s) to fix {'E501': set([12, 77, 109, 114, 121, 122, 154])}
+[file:./dynamic_programming/rod_cutting.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  16 issue(s) to fix {'E501': set([66, 171, 113, 102, 7, 8, 9, 71, 98, 16, 17, 53, 54, 87, 123, 29])}
+[file:./dynamic_programming/max_sub_array.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./dynamic_programming/fractional_knapsack.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./dynamic_programming/longest_increasing_subsequence.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  4 issue(s) to fix {'E501': set([8, 17, 4, 7])}
+[file:./dynamic_programming/coin_change.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./dynamic_programming/edit_distance.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  4 issue(s) to fix {'E501': set([8, 104, 5, 93])}
+[file:./dynamic_programming/subset_generation.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([1])}
+[file:./dynamic_programming/abbreviation.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./dynamic_programming/bitmask.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  3 issue(s) to fix {'E501': set([3, 94, 7])}
+[file:./dynamic_programming/matrix_chain_order.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./dynamic_programming/sum_of_subset.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([27])}
+[file:./dynamic_programming/factorial.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./dynamic_programming/longest_sub_array.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E501': set([4, 7])}
+[file:./file_transfer/recieve_file.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./file_transfer/send_file.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./boolean_algebra/quine_mc_cluskey.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./linear_algebra/src/polynom-for-points.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./linear_algebra/src/lib.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  4 issue(s) to fix {'E501': set([303]), 'W503': set([193, 194, 301])}
+[file:./linear_algebra/src/tests.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E501': set([148, 12])}
+[file:./ciphers/xor_cipher.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  20 issue(s) to fix {'W191': set([2, 3, 4, 6, 7, 8, 10, 12, 13, 14, 15, 16, 17]), 'E101': set([22]), 'E501': set([161, 35, 136, 110, 85, 60])}
+[file:./ciphers/caesar_cipher.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./ciphers/hill_cipher.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  9 issue(s) to fix {'E704': set([57, 55]), 'W503': set([125, 126]), 'E501': set([27, 83, 11, 5, 70])}
+[file:./ciphers/rot13.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./ciphers/cryptomath_module.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./ciphers/rsa_key_generator.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([41])}
+[file:./ciphers/transposition_cipher.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'W503': set([50, 51])}
+[file:./ciphers/base85.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./ciphers/rabin_miller.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./ciphers/playfair_cipher.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./ciphers/elgamal_key_generator.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E501': set([18, 52])}
+[file:./ciphers/rsa_cipher.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E501': set([104, 128])}
+[file:./ciphers/base16.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./ciphers/affine_cipher.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  6 issue(s) to fix {'E501': set([67, 5, 44, 50, 35, 31])}
+[file:./ciphers/onepad_cipher.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./ciphers/trafid_cipher.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./ciphers/simple_substitution_cipher.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./ciphers/base64_cipher.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  6 issue(s) to fix {'W503': set([72, 73, 71]), 'E501': set([10, 43, 46])}
+[file:./ciphers/morse_code_implementation.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./ciphers/vigenere_cipher.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./ciphers/base32.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./ciphers/atbash.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./ciphers/transposition_cipher_encrypt_decrypt_file.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./ciphers/brute_force_caesar_cipher.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_24/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_24/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_22/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_22/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_22/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_05/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_05/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_05/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_15/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([38])}
+[file:./project_euler/problem_15/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_10/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_10/sol3.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_10/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_10/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_36/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_36/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_234/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {u'E741': set([43])}
+[file:./project_euler/problem_234/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_20/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_20/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_20/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_53/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([17])}
+[file:./project_euler/problem_53/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_03/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_03/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_03/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_25/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_25/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_25/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_29/solution.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_29/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_14/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_14/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_14/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_13/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_13/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_02/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_02/sol4.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_02/sol3.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_02/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_02/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_551/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([115])}
+[file:./project_euler/problem_551/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_56/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_56/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_16/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_16/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_16/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_42/solution42.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([8])}
+[file:./project_euler/problem_32/sol32.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  4 issue(s) to fix {'W503': set([32, 35]), 'E501': set([41, 3])}
+[file:./project_euler/problem_17/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_17/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_07/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_07/sol3.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_07/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_07/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_28/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_28/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_04/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_04/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_04/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_12/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_12/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_12/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_76/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_76/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_40/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  6 issue(s) to fix {'W503': set([36, 37, 38, 39, 40, 41])}
+[file:./project_euler/problem_40/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_08/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_08/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_08/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_06/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_06/sol3.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_06/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_06/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_09/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_09/sol3.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_09/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_09/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_23/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([2])}
+[file:./project_euler/problem_18/solution.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_21/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_21/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_11/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  6 issue(s) to fix {'W503': set([51, 52, 53, 60, 61, 62])}
+[file:./project_euler/problem_11/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_11/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {u'E741': set([37])}
+[file:./project_euler/problem_19/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_19/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_67/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_67/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_31/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_31/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_52/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  5 issue(s) to fix {'W503': set([25, 26, 27, 28, 29])}
+[file:./project_euler/problem_52/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_48/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_48/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_01/sol1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_01/sol6.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_01/sol5.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_01/sol4.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_01/sol3.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_01/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./project_euler/problem_01/sol2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./matrix/matrix_operation.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./matrix/sherman_morrison.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  3 issue(s) to fix {'E501': set([235, 213, 214])}
+[file:./matrix/spiral_print.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./matrix/searching_in_sorted_matrix.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./matrix/matrix_class.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  16 issue(s) to fix {'W503': set([232, 226]), 'E501': set([322, 36, 293, 6, 264, 105, 106, 207, 144, 49, 303, 271, 60, 319])}
+[file:./matrix/rotate_matrix.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E501': set([25, 4])}
+[file:./matrix/nth_fibonacci_using_matrix_exponentiation.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  3 issue(s) to fix {'E501': set([73, 3, 14])}
+[file:./matrix/tests/test_matrix_operation.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  5 issue(s) to fix {'E501': set([88, 81, 67, 4, 47])}
+[file:./blockchain/modular_division.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  4 issue(s) to fix {'E402': set([144]), 'E501': set([128, 6, 127])}
+[file:./blockchain/diophantine_equation.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  6 issue(s) to fix {'E402': set([125]), 'E501': set([24, 1, 81, 80, 33])}
+[file:./blockchain/chinese_remainder_theorem.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E402': set([86]), 'E501': set([4])}
+[file:./maths/volume.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/fibonacci.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  3 issue(s) to fix {'E501': set([74, 78, 7])}
+[file:./maths/lucas_lehmer_primality_test.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([3])}
+[file:./maths/mobius_function.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/fibonacci_sequence_recursion.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([15])}
+[file:./maths/binary_exponentiation.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/find_max_recursion.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/prime_factors.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/largest_of_very_large_numbers.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/jaccard_similarity.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/lucas_series.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/simpson_rule.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([2])}
+[file:./maths/sieve_of_eratosthenes.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  3 issue(s) to fix {u'E741': set([36]), 'E501': set([6, 7])}
+[file:./maths/abs.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/kth_lexicographic_permutation.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/trapezoidal_rule.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([2])}
+[file:./maths/polynomial_evaluation.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  3 issue(s) to fix {'E501': set([47, 21, 23])}
+[file:./maths/newton_raphson.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  5 issue(s) to fix {'E704': set([34, 55]), 'E501': set([4, 6, 7])}
+[file:./maths/modular_exponential.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/fermat_little_theorem.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([2])}
+[file:./maths/average_mean.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/zellers_congruence.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([150])}
+[file:./maths/prime_check.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/karatsuba.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/least_common_multiple.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/softmax.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/abs_min.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/qr_decomposition.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([20])}
+[file:./maths/find_min.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/average_median.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/test_prime_check.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([2])}
+[file:./maths/basic_maths.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {u'E741': set([67, 68])}
+[file:./maths/quadratic_equations_complex_numbers.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/abs_max.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/factorial_recursive.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/segmented_sieve.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/greatest_common_divisor.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/find_max.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/matrix_exponentiation.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E501': set([19, 6])}
+[file:./maths/extended_euclidean_algorithm.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/radix2_fft.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  10 issue(s) to fix {'W503': set([139, 147, 141, 149]), 'E501': set([49, 20, 25, 26, 28, 29])}
+[file:./maths/3n+1.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/sum_of_arithmetic_series.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/factorial_python.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/gaussian.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/find_min_recursion.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/is_square_free.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./maths/collatz_sequence.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  4 issue(s) to fix {'E501': set([9, 3, 5, 6])}
+[file:./sorts/pancake_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/bubble_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/gnome_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/stooge_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/bitonic_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/odd_even_transposition_parallel.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([86])}
+[file:./sorts/selection_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/topological_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/quick_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/odd_even_transposition_single_threaded.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([4])}
+[file:./sorts/tim_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/quick_sort_3_partition.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/wiggle_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/external_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/shell_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/merge_sort_fastest.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([5])}
+[file:./sorts/radix_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/heap_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/bogo_bogo_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/comb_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E501': set([2, 3])}
+[file:./sorts/cycle_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/cocktail_shaker_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/merge_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/insertion_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'W503': set([36])}
+[file:./sorts/counting_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/random_normal_distribution_quicksort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([60])}
+[file:./sorts/tree_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/random_pivot_quick_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/bogo_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./sorts/bucket_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E501': set([20, 21])}
+[file:./sorts/pigeon_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./graphs/dijkstra_algorithm.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([1])}
+[file:./graphs/page_rank.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./graphs/dijkstra.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  3 issue(s) to fix {'E402': set([34]), 'E501': set([8, 13])}
+[file:./graphs/kahns_algorithm_topo.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {u'E741': set([35])}
+[file:./graphs/directed_and_undirected_(weighted)_graph.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  26 issue(s) to fix {u'E741': set([224, 225, 453, 454, 232, 171, 172, 461, 400, 401, 178, 407]), 'W503': set([449, 450, 451, 167, 168, 169, 396, 397, 398, 220, 221, 222]), 'E501': set([344, 74])}
+[file:./graphs/bfs_shortest_path.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./graphs/articulation_points.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {u'E741': set([44])}
+[file:./graphs/graph_matrix.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./graphs/check_bipartite_graph_bfs.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  6 issue(s) to fix {u'E741': set([45]), u'E712': set([38]), 'E501': set([3, 4, 5, 6])}
+[file:./graphs/finding_bridges.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {u'E741': set([31])}
+[file:./graphs/graph_list.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./graphs/bellman_ford.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./graphs/kahns_algorithm_long.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {u'E741': set([30])}
+[file:./graphs/even_tree.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./graphs/bfs.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./graphs/tarjans_scc.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  7 issue(s) to fix {'W503': set([40, 43]), 'E501': set([8, 18, 11, 14, 15])}
+[file:./graphs/a_star.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([60])}
+[file:./graphs/minimum_spanning_tree_prims.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {u'E741': set([117]), 'E501': set([78])}
+[file:./graphs/g_topological_sort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./graphs/eulerian_path_and_circuit_for_undirected_graph.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./graphs/check_bipartite_graph_dfs.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  5 issue(s) to fix {u'E741': set([34]), 'E501': set([3, 4, 5, 6])}
+[file:./graphs/depth_first_search.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./graphs/dfs.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  3 issue(s) to fix {'E501': set([16, 14, 15])}
+[file:./graphs/multi_hueristic_astar.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./graphs/graphs_floyd_warshall.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  6 issue(s) to fix {'W503': set([49, 50]), 'E501': set([32, 67, 3, 29])}
+[file:./graphs/scc_kosaraju.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./graphs/edmonds_karp_multiple_source_and_sink.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  4 issue(s) to fix {'W503': set([146, 147, 148]), 'E501': set([148])}
+[file:./graphs/dijkstra_2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'W503': set([33, 34])}
+[file:./graphs/basic_graphs.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  6 issue(s) to fix {u'E741': set([238]), 'E402': set([128, 75]), 'E501': set([200, 174, 95])}
+[file:./graphs/prim.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./graphs/breadth_first_search.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./graphs/minimum_spanning_tree_kruskal.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/queue/linked_queue.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/queue/double_ended_queue.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/queue/queue_on_pseudo_stack.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([1])}
+[file:./data_structures/queue/queue_on_list.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/heap/min_heap.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  3 issue(s) to fix {u'E741': set([69]), 'E501': set([106, 94])}
+[file:./data_structures/heap/heap.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {u'E741': set([82])}
+[file:./data_structures/heap/binomial_heap.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  8 issue(s) to fix {'W503': set([178, 236, 237]), 'E501': set([169, 175, 29, 54, 103])}
+[file:./data_structures/stacks/balanced_parentheses.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/stacks/linked_stack.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/stacks/infix_to_postfix_conversion.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([36])}
+[file:./data_structures/stacks/next_greater_element.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/stacks/stack.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/stacks/infix_to_prefix_conversion.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  4 issue(s) to fix {'W191': set([14]), 'E101': set([19, 14]), 'E501': set([56])}
+[file:./data_structures/stacks/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/stacks/stock_span_problem.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E501': set([3, 6])}
+[file:./data_structures/stacks/postfix_evaluation.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  7 issue(s) to fix {'E704': set([26]), 'W191': set([17]), 'E101': set([24, 17]), 'E501': set([48, 43, 53])}
+[file:./data_structures/hashing/double_hash.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([25])}
+[file:./data_structures/hashing/quadratic_probing.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/hashing/hash_table_with_linked_list.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  3 issue(s) to fix {'E501': set([24]), 'W503': set([18, 19])}
+[file:./data_structures/hashing/hash_table.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/hashing/number_theory/prime_numbers.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'W503': set([26])}
+[file:./data_structures/hashing/number_theory/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/trie/trie.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E501': set([3, 4])}
+[file:./data_structures/linked_list/doubly_linked_list.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  3 issue(s) to fix {'E501': set([2, 5, 6])}
+[file:./data_structures/linked_list/singly_linked_list.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([42])}
+[file:./data_structures/linked_list/is_palindrome.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/linked_list/swap_nodes.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/linked_list/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/binary_tree/fenwick_tree.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/binary_tree/segment_tree.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  3 issue(s) to fix {u'E741': set([19, 36, 53])}
+[file:./data_structures/binary_tree/binary_search_tree.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/binary_tree/lazy_segment_tree.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  6 issue(s) to fix {u'E741': set([66, 38, 73, 46, 48, 21])}
+[file:./data_structures/binary_tree/basic_binary_tree.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([1])}
+[file:./data_structures/binary_tree/avl_tree.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {u'E741': set([285]), 'E501': set([242])}
+[file:./data_structures/binary_tree/treap.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([167])}
+[file:./data_structures/binary_tree/red_black_tree.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  18 issue(s) to fix {'E501': set([477, 663]), 'W503': set([224, 225, 226, 233, 234, 235, 206, 207, 208, 242, 243, 215, 216, 217, 251, 252])}
+[file:./data_structures/binary_tree/lca.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./data_structures/disjoint_set/disjoint_set.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./strings/rabin_karp.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  6 issue(s) to fix {'W503': set([46]), 'E501': set([18, 17, 10, 11, 13])}
+[file:./strings/boyer_moore_search.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([44])}
+[file:./strings/knuth_morris_pratt.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  4 issue(s) to fix {'E501': set([8, 11, 3, 6])}
+[file:./strings/naive_string_search.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./strings/manacher.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  5 issue(s) to fix {'E501': set([16, 21, 14]), 'W503': set([5, 6])}
+[file:./strings/min_cost_string_conversion.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([2])}
+[file:./strings/levenshtein_distance.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./conversions/decimal_to_hexadecimal.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E501': set([26, 55])}
+[file:./conversions/decimal_to_octal.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./conversions/decimal_to_binary.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./searches/binary_search.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  5 issue(s) to fix {'E501': set([89, 122, 59, 21, 87])}
+[file:./searches/linear_search.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./searches/interpolation_search.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  12 issue(s) to fix {'W191': set([117, 126]), 'E101': set([128, 126, 117, 118]), 'E501': set([96, 135, 10, 55, 56, 122])}
+[file:./searches/jump_search.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./searches/quick_select.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([4])}
+[file:./searches/sentinel_linear_search.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./searches/tabu_search.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  34 issue(s) to fix {'W503': set([120, 121]), 'E501': set([128, 129, 2, 3, 4, 133, 135, 136, 13, 142, 22, 33, 36, 37, 44, 45, 181, 183, 185, 187, 191, 192, 75, 76, 77, 141, 80, 81, 83, 85, 219, 220])}
+[file:./searches/ternary_search.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([2])}
+[file:./searches/fibonacci_search.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./digital_image_processing/test_digital_image_processing.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([22])}
+[file:./digital_image_processing/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./digital_image_processing/change_contrast.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./digital_image_processing/filters/convolve.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {u'E231': set([21])}
+--->  0 issue(s) to fix {}
+[file:./digital_image_processing/filters/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./digital_image_processing/filters/median_filter.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./digital_image_processing/filters/sobel_filter.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./digital_image_processing/filters/gaussian_filter.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {u'E231': set([28])}
+--->  0 issue(s) to fix {}
+[file:./digital_image_processing/edge_detection/canny.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  13 issue(s) to fix {'E501': set([32, 33, 74, 75, 76, 77, 87, 88, 89]), 'W503': set([41, 42, 14, 15])}
+[file:./digital_image_processing/edge_detection/__init__.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./networking_flow/minimum_cut.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {u'E712': set([22])}
+[file:./networking_flow/ford_fulkerson.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {u'E712': set([19])}
+[file:./neural_network/perceptron.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  3 issue(s) to fix {'W503': set([56]), 'E501': set([56, 7])}
+[file:./neural_network/back_propagation_neural_network.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {u'E231': set([139, 140])}
+--->  0 issue(s) to fix {}
+[file:./neural_network/convolution_neural_network.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'W503': set([297, 138])}
+[file:./traversals/binary_tree_traversals.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([249])}
+[file:./other/word_patterns.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./other/binary_exponentiation.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([43])}
+[file:./other/euclidean_gcd.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./other/primelib.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  17 issue(s) to fix {'W503': set([571, 570, 324, 325, 326, 327, 380, 591, 592, 602, 601, 346, 347, 348, 381, 382]), 'E501': set([328])}
+[file:./other/nested_brackets.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  6 issue(s) to fix {'W191': set([8, 6, 7]), 'E101': set([20]), 'E501': set([3, 12])}
+[file:./other/detecting_english_programmatically.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E402': set([58])}
+[file:./other/password_generator.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./other/sierpinski_triangle.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  6 issue(s) to fix {'E501': set([9, 10, 11, 12, 13, 24])}
+[file:./other/anagrams.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./other/game_of_life.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([54])}
+[file:./other/tower_of_hanoi.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./other/two_sum.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E501': set([2, 4])}
+[file:./other/binary_exponentiation_2.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E501': set([43, 4])}
+[file:./other/fischer_yates_shuffle.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([4])}
+[file:./other/frequency_finder.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./other/linear_congruential_generator.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  2 issue(s) to fix {'E501': set([26, 15])}
+[file:./other/palindrome.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./backtracking/sum_of_subsets.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  9 issue(s) to fix {'W191': set([2, 3, 5, 6]), 'E101': set([11]), 'E501': set([2, 3, 36, 5])}
+[file:./backtracking/minimax.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([3])}
+[file:./backtracking/sudoku.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./backtracking/all_combinations.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  4 issue(s) to fix {'W191': set([4, 5, 6]), 'E101': set([12])}
+[file:./backtracking/all_subsequences.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  5 issue(s) to fix {'W191': set([2, 3, 5, 6]), 'E101': set([11])}
+[file:./backtracking/all_permutations.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  5 issue(s) to fix {'W191': set([2, 3, 5, 6]), 'E101': set([11])}
+[file:./backtracking/n_queens.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  6 issue(s) to fix {'E501': set([6, 43, 15, 50, 59, 61])}
+[file:./divide_and_conquer/mergesort.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {u'E741': set([2])}
+[file:./divide_and_conquer/inversions.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
+[file:./divide_and_conquer/convex_hull.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  30 issue(s) to fix {'E501': set([256, 4, 5, 6, 391, 394, 152, 280, 282, 157, 162, 347, 164, 165, 43, 303, 323, 324, 325, 326, 216, 345, 219, 360, 361, 362, 252, 253, 254, 255])}
+[file:./divide_and_conquer/closest_pair_of_points.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  1 issue(s) to fix {'E501': set([70])}
+[file:./divide_and_conquer/max_subarray_sum.py]
+--->  Applying global fix for E265
+--->  Applying global fix for W604
+--->  Applying global fix for W603
+--->  Applying global fix for W601
+--->  Applying global fix for W690
+--->  Applying global fix for E231
+--->  Applying global fix for E721
+--->  0 issue(s) to fix {}
