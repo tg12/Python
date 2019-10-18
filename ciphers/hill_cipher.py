@@ -52,8 +52,9 @@ class HillCipher:
     # This cipher takes alphanumerics into account
     # i.e. a total of 36 characters
 
-    replaceLetters = lambda self, letter: self.key_string.index(letter)
-    replaceNumbers = lambda self, num: self.key_string[round(num)]
+    def replaceLetters(self, letter): return self.key_string.index(letter)
+
+    def replaceNumbers(self, num): return self.key_string[round(num)]
 
     # take x and return x % len(key_string)
     modulus = numpy.vectorize(lambda x: x % 36)
@@ -64,7 +65,8 @@ class HillCipher:
         """
         encrypt_key is an NxN numpy matrix
         """
-        self.encrypt_key = self.modulus(encrypt_key)  # mod36 calc's on the encrypt key
+        self.encrypt_key = self.modulus(
+            encrypt_key)  # mod36 calc's on the encrypt key
         self.checkDeterminant()  # validate the determinant of the encryption key
         self.decrypt_key = None
         self.break_key = encrypt_key.shape[0]
@@ -79,9 +81,7 @@ class HillCipher:
         if gcd(det, len(self.key_string)) != 1:
             raise ValueError(
                 "discriminant modular {0} of encryption key({1}) is not co prime w.r.t {2}.\nTry another key.".format(
-                    req_l, det, req_l
-                )
-            )
+                    req_l, det, req_l))
 
     def processText(self, text):
         text = list(text.upper())
@@ -98,13 +98,13 @@ class HillCipher:
         encrypted = ""
 
         for i in range(0, len(text) - self.break_key + 1, self.break_key):
-            batch = text[i : i + self.break_key]
+            batch = text[i: i + self.break_key]
             batch_vec = list(map(self.replaceLetters, batch))
             batch_vec = numpy.matrix([batch_vec]).T
-            batch_encrypted = self.modulus(self.encrypt_key.dot(batch_vec)).T.tolist()[
-                0
-            ]
-            encrypted_batch = "".join(list(map(self.replaceNumbers, batch_encrypted)))
+            batch_encrypted = self.modulus(
+                self.encrypt_key.dot(batch_vec)).T.tolist()[0]
+            encrypted_batch = "".join(
+                list(map(self.replaceNumbers, batch_encrypted)))
             encrypted += encrypted_batch
 
         return encrypted
@@ -134,13 +134,13 @@ class HillCipher:
         decrypted = ""
 
         for i in range(0, len(text) - self.break_key + 1, self.break_key):
-            batch = text[i : i + self.break_key]
+            batch = text[i: i + self.break_key]
             batch_vec = list(map(self.replaceLetters, batch))
             batch_vec = numpy.matrix([batch_vec]).T
-            batch_decrypted = self.modulus(self.decrypt_key.dot(batch_vec)).T.tolist()[
-                0
-            ]
-            decrypted_batch = "".join(list(map(self.replaceNumbers, batch_decrypted)))
+            batch_decrypted = self.modulus(
+                self.decrypt_key.dot(batch_vec)).T.tolist()[0]
+            decrypted_batch = "".join(
+                list(map(self.replaceNumbers, batch_decrypted)))
             decrypted += decrypted_batch
 
         return decrypted

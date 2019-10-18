@@ -77,8 +77,8 @@ def transpose(matrix, return_map=True):
 
 
 def minor(matrix, row, column):
-    minor = matrix[:row] + matrix[row + 1 :]
-    minor = [row[:column] + row[column + 1 :] for row in minor]
+    minor = matrix[:row] + matrix[row + 1:]
+    minor = [row[:column] + row[column + 1:] for row in minor]
     return minor
 
 
@@ -137,7 +137,8 @@ def _verify_matrix_sizes(matrix_a, matrix_b):
 def main():
     matrix_a = [[12, 10], [3, 9]]
     matrix_b = [[3, 4], [7, 4]]
-    matrix_c = [[11, 12, 13, 14], [21, 22, 23, 24], [31, 32, 33, 34], [41, 42, 43, 44]]
+    matrix_c = [[11, 12, 13, 14], [21, 22, 23, 24],
+                [31, 32, 33, 34], [41, 42, 43, 44]]
     matrix_d = [[3, 0, 2], [2, 0, -2], [0, 1, 1]]
     print(
         "Add Operation, %s + %s = %s \n"

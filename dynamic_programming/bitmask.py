@@ -19,13 +19,14 @@ class AssignmentUsingBitmask:
 
         # DP table will have a dimension of (2^M)*N
         # initially all values are set to -1
-        self.dp = [
-            [-1 for i in range(total + 1)] for j in range(2 ** len(task_performed))
-        ]
+        self.dp = [[-1 for i in range(total + 1)]
+                   for j in range(2 ** len(task_performed))]
 
-        self.task = defaultdict(list)  # stores the list of persons for each task
+        # stores the list of persons for each task
+        self.task = defaultdict(list)
 
-        # finalmask is used to check if all persons are included by setting all bits to 1
+        # finalmask is used to check if all persons are included by setting all
+        # bits to 1
         self.finalmask = (1 << len(task_performed)) - 1
 
     def CountWaysUtil(self, mask, taskno):
@@ -34,7 +35,8 @@ class AssignmentUsingBitmask:
         if mask == self.finalmask:
             return 1
 
-        # if not everyone gets the task and no more tasks are available, return 0
+        # if not everyone gets the task and no more tasks are available, return
+        # 0
         if taskno > self.total_tasks:
             return 0
 
@@ -45,7 +47,8 @@ class AssignmentUsingBitmask:
         # Number of ways when we dont this task in the arrangement
         total_ways_util = self.CountWaysUtil(mask, taskno + 1)
 
-        # now assign the tasks one by one to all possible persons and recursively assign for the remaining tasks.
+        # now assign the tasks one by one to all possible persons and
+        # recursively assign for the remaining tasks.
         if taskno in self.task:
             for p in self.task[taskno]:
 
@@ -53,8 +56,10 @@ class AssignmentUsingBitmask:
                 if mask & (1 << p):
                     continue
 
-                # assign this task to p and change the mask value. And recursively assign tasks with the new mask value.
-                total_ways_util += self.CountWaysUtil(mask | (1 << p), taskno + 1)
+                # assign this task to p and change the mask value. And
+                # recursively assign tasks with the new mask value.
+                total_ways_util += self.CountWaysUtil(
+                    mask | (1 << p), taskno + 1)
 
         # save the value.
         self.dp[mask][taskno] = total_ways_util
@@ -68,7 +73,8 @@ class AssignmentUsingBitmask:
             for j in task_performed[i]:
                 self.task[j].append(i)
 
-        # call the function to fill the DP table, final answer is stored in dp[0][1]
+        # call the function to fill the DP table, final answer is stored in
+        # dp[0][1]
         return self.CountWaysUtil(0, 1)
 
 

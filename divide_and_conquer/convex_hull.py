@@ -184,7 +184,8 @@ def _validate_input(points):
     """
 
     if not points:
-        raise ValueError("Expecting a list of points but got {}".format(points))
+        raise ValueError(
+            "Expecting a list of points but got {}".format(points))
 
     if isinstance(points, set):
         points = list(points)
@@ -241,7 +242,8 @@ def _det(a, b, c):
     -100
     """
 
-    det = (a.x * b.y + b.x * c.y + c.x * a.y) - (a.y * b.x + b.y * c.x + c.y * a.x)
+    det = (a.x * b.y + b.x * c.y + c.x * a.y) - \
+        (a.y * b.x + b.y * c.x + c.y * a.x)
     return det
 
 

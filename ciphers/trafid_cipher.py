@@ -42,7 +42,8 @@ def __prepare(message, alphabet):
         raise KeyError("Length of alphabet has to be 27.")
     for each in message:
         if each not in alphabet:
-            raise ValueError("Each message character has to be included in alphabet!")
+            raise ValueError(
+                "Each message character has to be included in alphabet!")
 
     # Generate dictionares
     numbers = (
@@ -84,25 +85,28 @@ def __prepare(message, alphabet):
 
 
 def encryptMessage(message, alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ.", period=5):
-    message, alphabet, character2Number, number2Character = __prepare(message, alphabet)
+    message, alphabet, character2Number, number2Character = __prepare(
+        message, alphabet)
     encrypted, encrypted_numeric = "", ""
 
     for i in range(0, len(message) + 1, period):
-        encrypted_numeric += __encryptPart(message[i : i + period], character2Number)
+        encrypted_numeric += __encryptPart(
+            message[i: i + period], character2Number)
 
     for i in range(0, len(encrypted_numeric), 3):
-        encrypted += number2Character[encrypted_numeric[i : i + 3]]
+        encrypted += number2Character[encrypted_numeric[i: i + 3]]
 
     return encrypted
 
 
 def decryptMessage(message, alphabet="ABCDEFGHIJKLMNOPQRSTUVWXYZ.", period=5):
-    message, alphabet, character2Number, number2Character = __prepare(message, alphabet)
+    message, alphabet, character2Number, number2Character = __prepare(
+        message, alphabet)
     decrypted_numeric = []
     decrypted = ""
 
     for i in range(0, len(message) + 1, period):
-        a, b, c = __decryptPart(message[i : i + period], character2Number)
+        a, b, c = __decryptPart(message[i: i + period], character2Number)
 
         for j in range(0, len(a)):
             decrypted_numeric.append(a[j] + b[j] + c[j])

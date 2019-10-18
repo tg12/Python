@@ -4,6 +4,8 @@
 # comments: This programme outputs the Longest Strictly Increasing Subsequence in O(NLogN)
 #           Where N is the Number of elements in the list
 #############################
+
+
 def CeilIndex(v, l, r, key):
     while r - l > 1:
         m = (l + r) / 2

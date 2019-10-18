@@ -4,7 +4,7 @@ import timeit
 
 """
 Matrix Exponentiation is a technique to solve linear recurrences in logarithmic time.
-You read more about it here: 
+You read more about it here:
 http://zobayer.blogspot.com/2010/11/matrix-exponentiation.html
 https://www.hackerearth.com/practice/notes/matrix-exponentiation-1/
 """
@@ -12,7 +12,8 @@ https://www.hackerearth.com/practice/notes/matrix-exponentiation-1/
 
 class Matrix(object):
     def __init__(self, arg):
-        if isinstance(arg, list):  # Initialzes a matrix identical to the one provided.
+        # Initialzes a matrix identical to the one provided.
+        if isinstance(arg, list):
             self.t = arg
             self.n = len(arg)
         else:  # Initializes a square matrix of the given size and set the values to zero.
@@ -74,7 +75,9 @@ from __main__ import fibonacci_with_matrix_exponentiation
 """
     code = "fibonacci_with_matrix_exponentiation(randint(1,70000), 1, 1)"
     exec_time = timeit.timeit(setup=setup, stmt=code, number=100)
-    print("With matrix exponentiation the average execution time is ", exec_time / 100)
+    print(
+        "With matrix exponentiation the average execution time is ",
+        exec_time / 100)
     return exec_time
 
 
@@ -86,8 +89,8 @@ from __main__ import simple_fibonacci
     code = "simple_fibonacci(randint(1,70000), 1, 1)"
     exec_time = timeit.timeit(setup=setup, stmt=code, number=100)
     print(
-        "Without matrix exponentiation the average execution time is ", exec_time / 100
-    )
+        "Without matrix exponentiation the average execution time is ",
+        exec_time / 100)
     return exec_time
 
 

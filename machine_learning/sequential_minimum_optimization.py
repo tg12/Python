@@ -59,11 +59,14 @@ class SmoSVM(object):
         self._auto_norm = auto_norm
         self._c = np.float64(cost)
         self._b = np.float64(b)
-        self._tol = np.float64(tolerance) if tolerance > 0.0001 else np.float64(0.001)
+        self._tol = np.float64(
+            tolerance) if tolerance > 0.0001 else np.float64(0.001)
 
         self.tags = train[:, 0]
-        self.samples = self._norm(train[:, 1:]) if self._auto_norm else train[:, 1:]
-        self.alphas = alpha_list if alpha_list is not None else np.zeros(train.shape[0])
+        self.samples = self._norm(
+            train[:, 1:]) if self._auto_norm else train[:, 1:]
+        self.alphas = alpha_list if alpha_list is not None else np.zeros(
+            train.shape[0])
         self.Kernel = kernel_func
 
         self._eps = 0.001
@@ -123,8 +126,10 @@ class SmoSVM(object):
             b_old = self._b
             self._b = b
 
-            # 4:  update error value,here we only calculate those non-bound samples' error
-            self._unbound = [i for i in self._all_samples if self._is_unbound(i)]
+            # 4:  update error value,here we only calculate those non-bound
+            # samples' error
+            self._unbound = [
+                i for i in self._all_samples if self._is_unbound(i)]
             for s in self.unbound:
                 if s == i1 or s == i2:
                     continue
@@ -167,7 +172,10 @@ class SmoSVM(object):
         r = self._e(index) * self.tags[index]
         c = self._c
 
-        return (r < -tol and alphas[index] < c) or (r > tol and alphas[index] > 0.0)
+        return (
+            r < -
+            tol and alphas[index] < c) or (
+            r > tol and alphas[index] > 0.0)
 
     # Get value calculated from kernel function
     def _k(self, i1, i2):
@@ -191,7 +199,8 @@ class SmoSVM(object):
             return self._error[index]
         # get by g(xi) - yi
         else:
-            gx = np.dot(self.alphas * self.tags, self._K_matrix[:, index]) + self._b
+            gx = np.dot(self.alphas * self.tags,
+                        self._K_matrix[:, index]) + self._b
             yi = self.tags[index]
             return gx - yi
 
@@ -237,7 +246,8 @@ class SmoSVM(object):
             all_not_obey = True
             # all sample
             print("scanning all sample!")
-            for i1 in [i for i in self._all_samples if self._check_obey_kkt(i)]:
+            for i1 in [
+                    i for i in self._all_samples if self._check_obey_kkt(i)]:
                 all_not_obey = False
                 yield from self._choose_a2(i1)
 
@@ -277,9 +287,13 @@ class SmoSVM(object):
                 if self._is_unbound(index)
             }
             if self._e(i1) >= 0:
-                i2 = min(tmp_error_dict, key=lambda index: tmp_error_dict[index])
+                i2 = min(
+                    tmp_error_dict,
+                    key=lambda index: tmp_error_dict[index])
             else:
-                i2 = max(tmp_error_dict, key=lambda index: tmp_error_dict[index])
+                i2 = max(
+                    tmp_error_dict,
+                    key=lambda index: tmp_error_dict[index])
             cmd = yield i1, i2
             if cmd is None:
                 return
@@ -429,7 +443,10 @@ class Kernel(object):
                 raise ValueError("gamma value must greater than 0")
 
     def _get_kernel(self, kernel_name):
-        maps = {"linear": self._linear, "poly": self._polynomial, "rbf": self._rbf}
+        maps = {
+            "linear": self._linear,
+            "poly": self._polynomial,
+            "rbf": self._rbf}
         return maps[kernel_name]
 
     def __call__(self, v1, v2):
@@ -457,9 +474,8 @@ def test_cancel_data():
     # 0: download dataset and load into pandas' dataframe
     if not os.path.exists(r"cancel_data.csv"):
         request = urllib.request.Request(
-            CANCER_DATASET_URL,
-            headers={"User-Agent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)"},
-        )
+            CANCER_DATASET_URL, headers={
+                "User-Agent": "Mozilla/4.0 (compatible; MSIE 5.5; Windows NT)"}, )
         response = urllib.request.urlopen(request)
         content = response.read().decode("utf-8")
         with open(r"cancel_data.csv", "w") as f:
@@ -481,7 +497,8 @@ def test_cancel_data():
     mykernel = Kernel(kernel="rbf", degree=5, coef0=1, gamma=0.5)
     al = np.zeros(train_data.shape[0])
 
-    # 4: calculating best alphas using SMO algorithm and predict test_data samples
+    # 4: calculating best alphas using SMO algorithm and predict test_data
+    # samples
     mysvm = SmoSVM(
         train=train_data,
         kernel_func=mykernel,

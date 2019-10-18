@@ -27,7 +27,7 @@ digits?
 
 
 def fibonacci(n):
-    if n == 1 or type(n) is not int:
+    if n == 1 or not isinstance(n, int):
         return 0
     elif n == 2:
         return 1

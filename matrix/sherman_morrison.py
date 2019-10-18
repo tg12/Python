@@ -11,14 +11,15 @@ class Matrix:
 
         Example:
         >>> a = Matrix(2, 3, 1)
-        >>> a 
+        >>> a
         Matrix consist of 2 rows and 3 columns
         [1, 1, 1]
         [1, 1, 1]
         """
 
         self.row, self.column = row, column
-        self.array = [[default_value for c in range(column)] for r in range(row)]
+        self.array = [
+            [default_value for c in range(column)] for r in range(row)]
 
     def __str__(self):
         """
@@ -27,7 +28,8 @@ class Matrix:
         """
 
         # Prefix
-        s = "Matrix consist of %d rows and %d columns\n" % (self.row, self.column)
+        s = "Matrix consist of %d rows and %d columns\n" % (
+            self.row, self.column)
 
         # Make string identifier
         max_element_length = 0
@@ -40,7 +42,8 @@ class Matrix:
         def single_line(row_vector):
             nonlocal string_format_identifier
             line = "["
-            line += ", ".join(string_format_identifier % (obj,) for obj in row_vector)
+            line += ", ".join(string_format_identifier % (obj,)
+                              for obj in row_vector)
             line += "]"
             return line
 
@@ -186,10 +189,10 @@ class Matrix:
 
         Example:
         >>> a = Matrix(2, 3)
-        >>> for r in range(2):       
+        >>> for r in range(2):
         ...     for c in range(3):
         ...             a[r,c] = r*c
-        ... 
+        ...
         >>> a.transpose()
         Matrix consist of 3 rows and 2 columns
         [0, 0]
@@ -209,14 +212,14 @@ class Matrix:
         Apply Sherman-Morrison formula in O(n^2).
         To learn this formula, please look this: https://en.wikipedia.org/wiki/Sherman%E2%80%93Morrison_formula
         This method returns (A + uv^T)^(-1) where A^(-1) is self. Returns None if it's impossible to calculate.
-        Warning: This method doesn't check if self is invertible. 
+        Warning: This method doesn't check if self is invertible.
             Make sure self is invertible before execute this method.
 
         Example:
         >>> ainv = Matrix(3, 3, 0)
         >>> for i in range(3): ainv[i,i] = 1
-        ... 
-        >>> u = Matrix(3, 1, 0) 
+        ...
+        >>> u = Matrix(3, 1, 0)
         >>> u[0,0], u[1,0], u[2,0] = 1, 2, -3
         >>> v = Matrix(3, 1, 0)
         >>> v[0,0], v[1,0], v[2,0] = 4, -2, 5

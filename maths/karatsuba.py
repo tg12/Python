@@ -1,5 +1,6 @@
 """ Multiply two numbers using Karatsuba algorithm """
 
+
 def karatsuba(a, b):
     """
     >>> karatsuba(15463, 23489) == 15463 * 23489
@@ -20,7 +21,7 @@ def karatsuba(a, b):
         y = karatsuba((a1 + a2), (b1 + b2))
         z = karatsuba(a1, b1)
 
-        return ((z * 10**(2*m2)) + ((y - z - x) * 10**(m2)) + (x))
+        return ((z * 10**(2 * m2)) + ((y - z - x) * 10**(m2)) + (x))
 
 
 def main():

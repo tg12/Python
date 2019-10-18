@@ -3,7 +3,6 @@ import argparse
 
 
 def zeller(date_input: str) -> str:
-
     """
     Zellers Congruence Algorithm
     Find the day of the week for nearly any Gregorian or Julian calendar date
@@ -135,7 +134,8 @@ def zeller(date_input: str) -> str:
 
     # Validate math
     if f != convert_datetime_days[dt_ck.weekday()]:
-        raise AssertionError("The date was evaluated incorrectly. Contact developer.")
+        raise AssertionError(
+            "The date was evaluated incorrectly. Contact developer.")
 
     # Response
     response: str = f"Your date {date_input}, is a {days[str(f)]}!"
@@ -147,10 +147,10 @@ if __name__ == "__main__":
 
     doctest.testmod()
     parser = argparse.ArgumentParser(
-        description="Find out what day of the week nearly any date is or was. Enter date as a string in the mm-dd-yyyy or mm/dd/yyyy format"
-    )
+        description="Find out what day of the week nearly any date is or was. Enter date as a string in the mm-dd-yyyy or mm/dd/yyyy format")
     parser.add_argument(
-        "date_input", type=str, help="Date as a string (mm-dd-yyyy or mm/dd/yyyy)"
-    )
+        "date_input",
+        type=str,
+        help="Date as a string (mm-dd-yyyy or mm/dd/yyyy)")
     args = parser.parse_args()
     zeller(args.date_input)

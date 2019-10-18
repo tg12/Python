@@ -36,7 +36,8 @@ def selection_sort(collection):
             if collection[k] < collection[least]:
                 least = k
         if least != i:
-            collection[least], collection[i] = (collection[i], collection[least])
+            collection[least], collection[i] = (
+                collection[i], collection[least])
     return collection
 
 

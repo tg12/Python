@@ -33,7 +33,8 @@ def solution(n):
             # if 'number' is a product of two 3-digit numbers
             # then number is the answer otherwise fetch next number.
             while divisor != 99:
-                if (number % divisor == 0) and (len(str(int(number / divisor))) == 3):
+                if (number % divisor == 0) and (
+                        len(str(int(number / divisor))) == 3):
                     return number
                 divisor -= 1
 

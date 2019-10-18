@@ -16,13 +16,13 @@ class Matrix:
     [[1. 2. 3.]
      [4. 5. 6.]
      [7. 8. 9.]]
-    
+
     Matrix rows and columns are available as 2D arrays
     >>> print(matrix.rows)
     [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
     >>> print(matrix.columns())
     [[1, 4, 7], [2, 5, 8], [3, 6, 9]]
-    
+
     Order is returned as a tuple
     >>> matrix.order
     (3, 3)
@@ -103,8 +103,7 @@ class Matrix:
     def __init__(self, rows):
         error = TypeError(
             "Matrices must be formed from a list of zero or more lists containing at least "
-            "one and the same number of values, each of which must be of type int or float."
-        )
+            "one and the same number of values, each of which must be of type int or float.")
         if len(rows) != 0:
             cols = len(rows[0])
             if cols == 0:
@@ -121,7 +120,8 @@ class Matrix:
 
     # MATRIX INFORMATION
     def columns(self):
-        return [[row[i] for row in self.rows] for i in range(len(self.rows[0]))]
+        return [[row[i] for row in self.rows]
+                for i in range(len(self.rows[0]))]
 
     @property
     def num_rows(self):
@@ -186,12 +186,8 @@ class Matrix:
         return -1 * self.get_minor(row, column)
 
     def minors(self):
-        return Matrix(
-            [
-                [self.get_minor(row, column) for column in range(self.num_columns)]
-                for row in range(self.num_rows)
-            ]
-        )
+        return Matrix([[self.get_minor(row, column) for column in range(
+            self.num_columns)] for row in range(self.num_rows)])
 
     def cofactors(self):
         return Matrix(
@@ -238,7 +234,8 @@ class Matrix:
 
     # MATRIX MANIPULATION
     def add_row(self, row, position=None):
-        type_error = TypeError("Row must be a list containing all ints and/or floats")
+        type_error = TypeError(
+            "Row must be a list containing all ints and/or floats")
         if not isinstance(row, list):
             raise type_error
         for value in row:
@@ -267,7 +264,8 @@ class Matrix:
                 "Column must be equal in length to the other columns in the matrix"
             )
         if position is None:
-            self.rows = [self.rows[i] + [column[i]] for i in range(self.num_rows)]
+            self.rows = [self.rows[i] + [column[i]]
+                         for i in range(self.num_rows)]
         else:
             self.rows = [
                 self.rows[i][0:position] + [column[i]] + self.rows[i][position:]
@@ -277,7 +275,8 @@ class Matrix:
     # MATRIX OPERATIONS
     def __eq__(self, other):
         if not isinstance(other, Matrix):
-            raise TypeError("A Matrix can only be compared with another Matrix")
+            raise TypeError(
+                "A Matrix can only be compared with another Matrix")
         return self.rows == other.rows
 
     def __ne__(self, other):
@@ -308,19 +307,16 @@ class Matrix:
 
     def __mul__(self, other):
         if isinstance(other, (int, float)):
-            return Matrix([[element * other for element in row] for row in self.rows])
+            return Matrix([[element * other for element in row]
+                           for row in self.rows])
         elif isinstance(other, Matrix):
             if self.num_columns != other.num_rows:
                 raise ValueError(
                     "The number of columns in the first matrix must "
                     "be equal to the number of rows in the second"
                 )
-            return Matrix(
-                [
-                    [Matrix.dot_product(row, column) for column in other.columns()]
-                    for row in self.rows
-                ]
-            )
+            return Matrix([[Matrix.dot_product(row, column)
+                            for column in other.columns()] for row in self.rows])
         else:
             raise TypeError(
                 "A Matrix can only be multiplied by an int, float, or another matrix"
@@ -328,7 +324,8 @@ class Matrix:
 
     def __pow__(self, other):
         if not isinstance(other, int):
-            raise TypeError("A Matrix can only be raised to the power of an int")
+            raise TypeError(
+                "A Matrix can only be raised to the power of an int")
         if not self.is_square:
             raise ValueError("Only square matrices can be raised to a power")
         if other == 0:

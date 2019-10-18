@@ -1,5 +1,8 @@
-import random, sys, os
-import rabin_miller as rabinMiller, cryptomath_module as cryptoMath
+import random
+import sys
+import os
+import rabin_miller as rabinMiller
+import cryptomath_module as cryptoMath
 
 
 def main():
@@ -35,9 +38,8 @@ def makeKeyFiles(name, keySize):
     ):
         print("\nWARNING:")
         print(
-            '"%s_pubkey.txt" or "%s_privkey.txt" already exists. \nUse a different name or delete these files and re-run this program.'
-            % (name, name)
-        )
+            '"%s_pubkey.txt" or "%s_privkey.txt" already exists. \nUse a different name or delete these files and re-run this program.' %
+            (name, name))
         sys.exit()
 
     publicKey, privateKey = generateKey(keySize)

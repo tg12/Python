@@ -23,7 +23,7 @@ class Test(unittest.TestCase):
         try:
             y = Vector()
             self.assertTrue(False)
-        except:
+        except BaseException:
             self.assertTrue(True)
 
     def test_str(self):

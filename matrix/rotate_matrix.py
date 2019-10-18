@@ -21,7 +21,8 @@ def make_matrix(row_size: int = 4) -> [[int]]:
     True
     """
     row_size = abs(row_size) or 4
-    return [[1 + x + y * row_size for x in range(row_size)] for y in range(row_size)]
+    return [
+        [1 + x + y * row_size for x in range(row_size)] for y in range(row_size)]
 
 
 def rotate_90(matrix: [[]]) -> [[]]:

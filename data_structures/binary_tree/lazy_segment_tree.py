@@ -7,7 +7,8 @@ class SegmentTree:
         self.st = [
             0 for i in range(0, 4 * N)
         ]  # approximate the overall size of segment tree with array N
-        self.lazy = [0 for i in range(0, 4 * N)]  # create array to store lazy update
+        # create array to store lazy update
+        self.lazy = [0 for i in range(0, 4 * N)]
         self.flag = [0 for i in range(0, 4 * N)]  # flag for lazy update
 
     def left(self, idx):
@@ -23,13 +24,15 @@ class SegmentTree:
             mid = (l + r) // 2
             self.build(self.left(idx), l, mid, A)
             self.build(self.right(idx), mid + 1, r, A)
-            self.st[idx] = max(self.st[self.left(idx)], self.st[self.right(idx)])
+            self.st[idx] = max(self.st[self.left(idx)],
+                               self.st[self.right(idx)])
 
-    # update with O(lg N) (Normal segment tree without lazy update will take O(Nlg N) for each update)
+    # update with O(lg N) (Normal segment tree without lazy update will take
+    # O(Nlg N) for each update)
     def update(
         self, idx, l, r, a, b, val
     ):  # update(1, 1, N, a, b, v) for update val v to [a,b]
-        if self.flag[idx] == True:
+        if self.flag[idx]:
             self.st[idx] = self.lazy[idx]
             self.flag[idx] = False
             if l != r:
@@ -55,8 +58,9 @@ class SegmentTree:
         return True
 
     # query with O(lg N)
-    def query(self, idx, l, r, a, b):  # query(1, 1, N, a, b) for query max of [a,b]
-        if self.flag[idx] == True:
+    # query(1, 1, N, a, b) for query max of [a,b]
+    def query(self, idx, l, r, a, b):
+        if self.flag[idx]:
             self.st[idx] = self.lazy[idx]
             self.flag[idx] = False
             if l != r:

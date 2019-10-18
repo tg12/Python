@@ -86,7 +86,8 @@ class MaximumFlowAlgorithmExecutor(FlowNetworkAlgorithmExecutor):
 
     def getMaximumFlow(self):
         if not self.executed:
-            raise Exception("You should execute algorithm before using its result!")
+            raise Exception(
+                "You should execute algorithm before using its result!")
 
         return self.maximumFlow
 
@@ -95,7 +96,10 @@ class PushRelabelExecutor(MaximumFlowAlgorithmExecutor):
     def __init__(self, flowNetwork):
         super(PushRelabelExecutor, self).__init__(flowNetwork)
 
-        self.preflow = [[0] * self.verticesCount for i in range(self.verticesCount)]
+        self.preflow = [
+            [0] *
+            self.verticesCount for i in range(
+                self.verticesCount)]
 
         self.heights = [0] * self.verticesCount
         self.excesses = [0] * self.verticesCount
@@ -104,7 +108,8 @@ class PushRelabelExecutor(MaximumFlowAlgorithmExecutor):
         self.heights[self.sourceIndex] = self.verticesCount
 
         # push some substance to graph
-        for nextVertexIndex, bandwidth in enumerate(self.graph[self.sourceIndex]):
+        for nextVertexIndex, bandwidth in enumerate(
+                self.graph[self.sourceIndex]):
             self.preflow[self.sourceIndex][nextVertexIndex] += bandwidth
             self.preflow[nextVertexIndex][self.sourceIndex] -= bandwidth
             self.excesses[nextVertexIndex] += bandwidth
@@ -159,10 +164,8 @@ class PushRelabelExecutor(MaximumFlowAlgorithmExecutor):
     def relabel(self, vertexIndex):
         minHeight = None
         for toIndex in range(self.verticesCount):
-            if (
-                self.graph[vertexIndex][toIndex] - self.preflow[vertexIndex][toIndex]
-                > 0
-            ):
+            if (self.graph[vertexIndex][toIndex] -
+                    self.preflow[vertexIndex][toIndex] > 0):
                 if minHeight is None or self.heights[toIndex] < minHeight:
                     minHeight = self.heights[toIndex]
 

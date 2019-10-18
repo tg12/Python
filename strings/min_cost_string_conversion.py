@@ -65,7 +65,8 @@ def assemble_transformation(ops, i, j):
 
 
 if __name__ == "__main__":
-    _, operations = compute_transform_tables("Python", "Algorithms", -1, 1, 2, 2)
+    _, operations = compute_transform_tables(
+        "Python", "Algorithms", -1, 1, 2, 2)
 
     m = len(operations)
     n = len(operations[0])
@@ -88,7 +89,9 @@ if __name__ == "__main__":
             elif op[0] == "R":
                 string[i] = op[2]
 
-                file.write("%-16s" % ("Replace %c" % op[1] + " with " + str(op[2])))
+                file.write("%-16s" %
+                           ("Replace %c" %
+                            op[1] + " with " + str(op[2])))
                 file.write("\t\t" + "".join(string))
                 file.write("\r\n")
 

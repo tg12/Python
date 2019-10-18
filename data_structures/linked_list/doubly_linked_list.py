@@ -13,7 +13,7 @@ class LinkedList:  # making main class named linked list
 
     def insertHead(self, x):
         newLink = Link(x)  # Create a new link with a value attached to it
-        if self.isEmpty() == True:  # Set the first element added to be the tail
+        if self.isEmpty():  # Set the first element added to be the tail
             self.tail = newLink
         else:
             self.head.previous = newLink  # newLink <-- currenthead(head)
@@ -23,9 +23,9 @@ class LinkedList:  # making main class named linked list
     def deleteHead(self):
         temp = self.head
         self.head = self.head.next  # oldHead <--> 2ndElement(head)
-        self.head.previous = (
-            None
-        )  # oldHead --> 2ndElement(head) nothing pointing at it so the old head will be removed
+        # oldHead --> 2ndElement(head) nothing pointing at it so the old head
+        # will be removed
+        self.head.previous = (None)
         if self.head is None:
             self.tail = None  # if empty linked list
         return temp
@@ -64,7 +64,7 @@ class LinkedList:  # making main class named linked list
 
     def display(self):  # Prints contents of the list
         current = self.head
-        while current != None:
+        while current is not None:
             current.displayLink()
             current = current.next
         print()

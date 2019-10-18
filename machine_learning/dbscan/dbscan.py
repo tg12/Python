@@ -34,7 +34,8 @@ def euclidean_distance(q, p):
         TypeError: inputs must be iterable, either list [x,y] or tuple (x,y)
     """
     if not hasattr(q, "__iter__") or not hasattr(p, "__iter__"):
-        raise TypeError("inputs must be iterable, either list [x,y] or tuple (x,y)")
+        raise TypeError(
+            "inputs must be iterable, either list [x,y] or tuple (x,y)")
 
     if isinstance(q, str) or isinstance(p, str):
         raise TypeError("inputs cannot be str")
@@ -49,7 +50,7 @@ def euclidean_distance(q, p):
     for num in q + p:
         try:
             num = int(num)
-        except:
+        except BaseException:
             raise ValueError("Non-numeric input detected")
 
     a = pow((q[0] - p[0]), 2)
@@ -85,7 +86,8 @@ def find_neighbors(db, q, eps):
         raise ValueError("eps should be either int or float")
 
     if not hasattr(q, "__iter__"):
-        raise TypeError("Q must a 2-dimentional point in the format (x,y) or [x,y]")
+        raise TypeError(
+            "Q must a 2-dimentional point in the format (x,y) or [x,y]")
 
     if not isinstance(db, dict):
         raise TypeError(

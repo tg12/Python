@@ -2,7 +2,8 @@
 # GCD ( Greatest Common Divisor ) or HCF ( Highest Common Factor )
 
 # If GCD(a,b) = 1, then for any remainder ra modulo a and any remainder rb modulo b there exists integer n,
-# such that n = ra (mod a) and n = ra(mod b).  If n1 and n2 are two such integers, then n1=n2(mod ab)
+# such that n = ra (mod a) and n = ra(mod b).  If n1 and n2 are two such
+# integers, then n1=n2(mod ab)
 
 # Algorithm :
 
@@ -47,7 +48,7 @@ def chinese_remainder_theorem(n1, r1, n2, r2):
     return (n % m + m) % m
 
 
-# ----------SAME SOLUTION USING InvertModulo instead ExtendedEuclid----------------
+# ----------SAME SOLUTION USING InvertModulo instead ExtendedEuclid-------
 
 # This function find the inverses of a i.e., a^(-1)
 def invert_modulo(a, n):

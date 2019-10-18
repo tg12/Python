@@ -13,10 +13,12 @@ def QuadraticEquation(a: int, b: int, c: int) -> Tuple[str, str]:
     ('-0.2', '-1.0')
     """
     if a == 0:
-        raise ValueError("Coefficient 'a' must not be zero for quadratic equations.")
+        raise ValueError(
+            "Coefficient 'a' must not be zero for quadratic equations.")
     delta = b * b - 4 * a * c
     if delta >= 0:
-        return str((-b + sqrt(delta)) / (2 * a)), str((-b - sqrt(delta)) / (2 * a))
+        return str((-b + sqrt(delta)) / (2 * a)
+                   ), str((-b - sqrt(delta)) / (2 * a))
     """
     Treats cases of Complexes Solutions(i = imaginary unit)
     Ex.: a = 5, b = 2, c = 1

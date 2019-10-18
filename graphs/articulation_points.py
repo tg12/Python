@@ -36,7 +36,7 @@ def computeAP(l):
             isArt[i] = outEdgeCount > 1
 
     for x in range(len(isArt)):
-        if isArt[x] == True:
+        if isArt[x]:
             print(x)
 
 

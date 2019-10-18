@@ -18,7 +18,8 @@ class Graph:
         for k in range(0, self.N):
             for i in range(0, self.N):
                 for j in range(0, self.N):
-                    self.dp[i][j] = min(self.dp[i][j], self.dp[i][k] + self.dp[k][j])
+                    self.dp[i][j] = min(
+                        self.dp[i][j], self.dp[i][k] + self.dp[k][j])
 
     def showMin(self, u, v):
         return self.dp[u][v]

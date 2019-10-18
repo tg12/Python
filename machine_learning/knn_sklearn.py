@@ -27,5 +27,6 @@ prediction = knn.predict(X_new)
 
 print(
     "\nNew array: \n {}"
-    "\n\nTarget Names Prediction: \n {}".format(X_new, iris["target_names"][prediction])
-)
+    "\n\nTarget Names Prediction: \n {}".format(
+        X_new,
+        iris["target_names"][prediction]))

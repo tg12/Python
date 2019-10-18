@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 
-## Logistic Regression from scratch
+# Logistic Regression from scratch
 
 # In[62]:
 
@@ -22,7 +22,8 @@ from sklearn import datasets
 
 # In[67]:
 
-# sigmoid function or logistic function is used as a hypothesis function in classification problems
+# sigmoid function or logistic function is used as a hypothesis function
+# in classification problems
 
 
 def sigmoid_function(z):
@@ -38,7 +39,8 @@ def log_likelihood(X, Y, weights):
     return np.sum(Y * scores - np.log(1 + np.exp(scores)))
 
 
-# here alpha is the learning rate, X is the feature matrix,y is the target matrix
+# here alpha is the learning rate, X is the feature matrix,y is the target
+# matrix
 def logistic_reg(alpha, X, y, max_iterations=70000):
     theta = np.zeros(X.shape[1])
 
@@ -51,7 +53,8 @@ def logistic_reg(alpha, X, y, max_iterations=70000):
         h = sigmoid_function(z)
         J = cost_function(h, y)
         if iterations % 100 == 0:
-            print(f"loss: {J} \t")  # printing the loss after every 100 iterations
+            # printing the loss after every 100 iterations
+            print(f"loss: {J} \t")
     return theta
 
 
@@ -67,9 +70,9 @@ if __name__ == "__main__":
     print("theta: ", theta)  # printing the theta i.e our weights vector
 
     def predict_prob(X):
-        return sigmoid_function(
-            np.dot(X, theta)
-        )  # predicting the value of probability from the logistic regression algorithm
+        # predicting the value of probability from the logistic regression
+        # algorithm
+        return sigmoid_function(np.dot(X, theta))
 
     plt.figure(figsize=(10, 6))
     plt.scatter(X[y == 0][:, 0], X[y == 0][:, 1], color="b", label="0")

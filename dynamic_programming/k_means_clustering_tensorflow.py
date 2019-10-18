@@ -35,61 +35,60 @@ def TFKMeansCluster(vectors, noofclusters):
 
         sess = tf.Session()
 
-        ##CONSTRUCTING THE ELEMENTS OF COMPUTATION
+        # CONSTRUCTING THE ELEMENTS OF COMPUTATION
 
-        ##First lets ensure we have a Variable vector for each centroid,
-        ##initialized to one of the vectors from the available data points
-        centroids = [
-            tf.Variable((vectors[vector_indices[i]])) for i in range(noofclusters)
-        ]
-        ##These nodes will assign the centroid Variables the appropriate
-        ##values
+        # First lets ensure we have a Variable vector for each centroid,
+        # initialized to one of the vectors from the available data points
+        centroids = [tf.Variable((vectors[vector_indices[i]]))
+                     for i in range(noofclusters)]
+        # These nodes will assign the centroid Variables the appropriate
+        # values
         centroid_value = tf.placeholder("float64", [dim])
         cent_assigns = []
         for centroid in centroids:
             cent_assigns.append(tf.assign(centroid, centroid_value))
 
-        ##Variables for cluster assignments of individual vectors(initialized
-        ##to 0 at first)
+        # Variables for cluster assignments of individual vectors(initialized
+        # to 0 at first)
         assignments = [tf.Variable(0) for i in range(len(vectors))]
-        ##These nodes will assign an assignment Variable the appropriate
-        ##value
+        # These nodes will assign an assignment Variable the appropriate
+        # value
         assignment_value = tf.placeholder("int32")
         cluster_assigns = []
         for assignment in assignments:
             cluster_assigns.append(tf.assign(assignment, assignment_value))
 
-        ##Now lets construct the node that will compute the mean
+        # Now lets construct the node that will compute the mean
         # The placeholder for the input
         mean_input = tf.placeholder("float", [None, dim])
         # The Node/op takes the input and computes a mean along the 0th
         # dimension, i.e. the list of input vectors
         mean_op = tf.reduce_mean(mean_input, 0)
 
-        ##Node for computing Euclidean distances
+        # Node for computing Euclidean distances
         # Placeholders for input
         v1 = tf.placeholder("float", [dim])
         v2 = tf.placeholder("float", [dim])
         euclid_dist = tf.sqrt(tf.reduce_sum(tf.pow(tf.sub(v1, v2), 2)))
 
-        ##This node will figure out which cluster to assign a vector to,
-        ##based on Euclidean distances of the vector from the centroids.
+        # This node will figure out which cluster to assign a vector to,
+        # based on Euclidean distances of the vector from the centroids.
         # Placeholder for input
         centroid_distances = tf.placeholder("float", [noofclusters])
         cluster_assignment = tf.argmin(centroid_distances, 0)
 
-        ##INITIALIZING STATE VARIABLES
+        # INITIALIZING STATE VARIABLES
 
-        ##This will help initialization of all Variables defined with respect
-        ##to the graph. The Variable-initializer should be defined after
-        ##all the Variables have been constructed, so that each of them
-        ##will be included in the initialization.
+        # This will help initialization of all Variables defined with respect
+        # to the graph. The Variable-initializer should be defined after
+        # all the Variables have been constructed, so that each of them
+        # will be included in the initialization.
         init_op = tf.initialize_all_variables()
 
         # Initialize all variables
         sess.run(init_op)
 
-        ##CLUSTERING ITERATIONS
+        # CLUSTERING ITERATIONS
 
         # Now perform the Expectation-Maximization steps of K-Means clustering
         # iterations. To keep things simple, we will only do a set number of
@@ -97,9 +96,9 @@ def TFKMeansCluster(vectors, noofclusters):
         noofiterations = 100
         for iteration_n in range(noofiterations):
 
-            ##EXPECTATION STEP
-            ##Based on the centroid locations till last iteration, compute
-            ##the _expected_ centroid assignments.
+            # EXPECTATION STEP
+            # Based on the centroid locations till last iteration, compute
+            # the _expected_ centroid assignments.
             # Iterate over each vector
             for vector_n in range(len(vectors)):
                 vect = vectors[vector_n]
@@ -114,14 +113,14 @@ def TFKMeansCluster(vectors, noofclusters):
                 # Now use the cluster assignment node, with the distances
                 # as the input
                 assignment = sess.run(
-                    cluster_assignment, feed_dict={centroid_distances: distances}
-                )
+                    cluster_assignment, feed_dict={
+                        centroid_distances: distances})
                 # Now assign the value to the appropriate state variable
                 sess.run(
-                    cluster_assigns[vector_n], feed_dict={assignment_value: assignment}
-                )
+                    cluster_assigns[vector_n], feed_dict={
+                        assignment_value: assignment})
 
-            ##MAXIMIZATION STEP
+            # MAXIMIZATION STEP
             # Based on the expected state computed from the Expectation Step,
             # compute the locations of the centroids so as to maximize the
             # overall objective of minimizing within-cluster Sum-of-Squares
@@ -138,8 +137,8 @@ def TFKMeansCluster(vectors, noofclusters):
                 )
                 # Assign value to appropriate variable
                 sess.run(
-                    cent_assigns[cluster_n], feed_dict={centroid_value: new_location}
-                )
+                    cent_assigns[cluster_n], feed_dict={
+                        centroid_value: new_location})
 
         # Return centroids and assignments
         centroids = sess.run(centroids)

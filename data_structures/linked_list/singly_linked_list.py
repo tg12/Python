@@ -13,13 +13,13 @@ class Linked_List:
             self.insert_head(data)  # If this is first node, call insert_head
         else:
             temp = self.Head
-            while temp.next != None:  # traverse to last node
+            while temp.next is not None:  # traverse to last node
                 temp = temp.next
             temp.next = Node(data)  # create node & link to tail
 
     def insert_head(self, data):
         newNod = Node(data)  # create a new node
-        if self.Head != None:
+        if self.Head is not None:
             newNod.next = self.Head  # link newNode to head
         self.Head = newNod  # make NewNode as Head
 
@@ -31,14 +31,14 @@ class Linked_List:
 
     def delete_head(self):  # delete from head
         temp = self.Head
-        if self.Head != None:
+        if self.Head is not None:
             self.Head = self.Head.next
             temp.next = None
         return temp
 
     def delete_tail(self):  # delete from tail
         tamp = self.Head
-        if self.Head != None:
+        if self.Head is not None:
             if self.Head.next is None:  # if Head is the only Node in the Linked List
                 self.Head = None
             else:

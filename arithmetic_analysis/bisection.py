@@ -19,7 +19,8 @@ def bisection(
         return
     else:
         mid = start + (end - start) / 2.0
-        while abs(start - mid) > 10 ** -7:  # until we achieve precise equals to 10^-7
+        while abs(start - mid) > 10 ** - \
+                7:  # until we achieve precise equals to 10^-7
             if function(mid) == 0:
                 return mid
             elif function(mid) * function(start) < 0:

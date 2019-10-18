@@ -42,13 +42,8 @@ def solution(n):
     >>> solution(50)
     0
     """
-    total = sum(
-        [
-            i
-            for i in range(1, n)
-            if sum_of_divisors(sum_of_divisors(i)) == i and sum_of_divisors(i) != i
-        ]
-    )
+    total = sum([i for i in range(1, n) if sum_of_divisors(
+        sum_of_divisors(i)) == i and sum_of_divisors(i) != i])
     return total
 
 

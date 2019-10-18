@@ -13,7 +13,13 @@ import random
 
 
 class Perceptron:
-    def __init__(self, sample, exit, learn_rate=0.01, epoch_number=1000, bias=-1):
+    def __init__(
+            self,
+            sample,
+            exit,
+            learn_rate=0.01,
+            epoch_number=1000,
+            bias=-1):
         self.sample = sample
         self.exit = exit
         self.learn_rate = learn_rate
@@ -53,7 +59,7 @@ class Perceptron:
             # print('Epoch: \n',epoch_count)
             epoch_count = epoch_count + 1
             # if you want controle the epoch or just by erro
-            if erro == False:
+            if not erro:
                 print(("\nEpoch:\n", epoch_count))
                 print("------------------------\n")
                 # if epoch_count > self.epoch_number or not erro:

@@ -1,6 +1,7 @@
 """Lower-Upper (LU) Decomposition."""
 
-# lower–upper (LU) decomposition - https://en.wikipedia.org/wiki/LU_decomposition
+# lower–upper (LU) decomposition -
+# https://en.wikipedia.org/wiki/LU_decomposition
 import numpy
 
 

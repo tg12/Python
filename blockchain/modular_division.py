@@ -48,7 +48,7 @@ def invert_modulo(a, n):
     return b
 
 
-# ------------------ Finding Modular division using invert_modulo -------------------
+# ------------------ Finding Modular division using invert_modulo --------
 
 # This function used the above inversion of a to find x = (b*a^(-1))mod n
 def modular_division2(a, b, n):
@@ -68,7 +68,8 @@ def modular_division2(a, b, n):
     return x
 
 
-# Extended Euclid's Algorithm : If d divides a and b and d = a*x + b*y for integers x and y, then d = gcd(a,b)
+# Extended Euclid's Algorithm : If d divides a and b and d = a*x + b*y for
+# integers x and y, then d = gcd(a,b)
 
 
 def extended_gcd(a, b):

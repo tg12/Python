@@ -103,11 +103,8 @@ class Graph:
     def show_graph(self):
         # u -> v(w)
         for u in self.adjList:
-            print(
-                u,
-                "->",
-                " -> ".join(str("{}({})".format(v, w)) for v, w in self.adjList[u]),
-            )
+            print(u, "->", " -> ".join(str("{}({})".format(v, w))
+                                       for v, w in self.adjList[u]), )
 
     def dijkstra(self, src):
         # Flush old junk values in par[]

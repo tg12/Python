@@ -9,7 +9,7 @@
 def dfs(u, graph, visited_edge, path=[]):
     path = path + [u]
     for v in graph[u]:
-        if visited_edge[u][v] == False:
+        if not visited_edge[u][v]:
             visited_edge[u][v], visited_edge[v][u] = True, True
             path = dfs(v, graph, visited_edge, path)
     return path
@@ -33,7 +33,8 @@ def check_circuit_or_path(graph, max_node):
 
 
 def check_euler(graph, max_node):
-    visited_edge = [[False for _ in range(max_node + 1)] for _ in range(max_node + 1)]
+    visited_edge = [[False for _ in range(max_node + 1)]
+                    for _ in range(max_node + 1)]
     check, odd_node = check_circuit_or_path(graph, max_node)
     if check == 3:
         print("graph is not Eulerian")

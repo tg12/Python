@@ -39,7 +39,7 @@ class Graph:
 
             # mark all adjacent nodes as visited and print them
             for i in self.vertex[startVertex]:
-                if visited[i] == False:
+                if not visited[i]:
                     queue.append(i)
                     visited[i] = True
 

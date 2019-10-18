@@ -8,7 +8,7 @@ PI = 180
 
 def gen_gaussian_kernel(k_size, sigma):
     center = k_size // 2
-    x, y = np.mgrid[0 - center : k_size - center, 0 - center : k_size - center]
+    x, y = np.mgrid[0 - center: k_size - center, 0 - center: k_size - center]
     g = (
         1
         / (2 * np.pi * sigma)
@@ -29,8 +29,8 @@ def canny(image, threshold_low=15, threshold_high=30, weak=128, strong=255):
     dst = np.zeros((image_row, image_col))
 
     """
-    Non-maximum suppression. If the edge strength of the current pixel is the largest compared to the other pixels 
-    in the mask with the same direction, the value will be preserved. Otherwise, the value will be suppressed. 
+    Non-maximum suppression. If the edge strength of the current pixel is the largest compared to the other pixels
+    in the mask with the same direction, the value will be preserved. Otherwise, the value will be suppressed.
     """
     for row in range(1, image_row - 1):
         for col in range(1, image_col - 1):

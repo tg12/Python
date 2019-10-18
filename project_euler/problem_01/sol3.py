@@ -24,7 +24,7 @@ def solution(n):
 
     sum = 0
     num = 0
-    while 1:
+    while True:
         num += 3
         if num >= n:
             break

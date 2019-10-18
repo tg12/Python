@@ -1,4 +1,6 @@
-import time, os, sys
+import time
+import os
+import sys
 import transposition_cipher as transCipher
 
 

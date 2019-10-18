@@ -36,13 +36,11 @@ def tarjan(g):
         for w in g[v]:
             if index_of[w] == -1:
                 index = strong_connect(w, index, components)
-                lowlink_of[v] = (
-                    lowlink_of[w] if lowlink_of[w] < lowlink_of[v] else lowlink_of[v]
-                )
+                lowlink_of[v] = (lowlink_of[w] if lowlink_of[w]
+                                 < lowlink_of[v] else lowlink_of[v])
             elif on_stack[w]:
-                lowlink_of[v] = (
-                    lowlink_of[w] if lowlink_of[w] < lowlink_of[v] else lowlink_of[v]
-                )
+                lowlink_of[v] = (lowlink_of[w] if lowlink_of[w]
+                                 < lowlink_of[v] else lowlink_of[v])
 
         if lowlink_of[v] == index_of[v]:
             component = []

@@ -42,7 +42,7 @@ def solution(n):
     for x in range(n):
         l = [i for i in input().split()]
         c2 = 1
-        while 1:
+        while True:
             if len(fib(l[0], l[1], c2)) < int(l[2]):
                 c2 += 1
             else:

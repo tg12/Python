@@ -22,7 +22,8 @@ import operator as op
 
 def Solve(Postfix):
     Stack = []
-    Div = lambda x, y: int(x / y)  # integer division operation
+
+    def Div(x, y): return int(x / y)  # integer division operation
     Opr = {
         "^": op.pow,
         "*": op.mul,
@@ -66,5 +67,6 @@ def Solve(Postfix):
 
 
 if __name__ == "__main__":
-    Postfix = input("\n\nEnter a Postfix Equation (space separated) = ").split(" ")
+    Postfix = input(
+        "\n\nEnter a Postfix Equation (space separated) = ").split(" ")
     print("\n\tResult = ", Solve(Postfix))

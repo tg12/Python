@@ -7,6 +7,7 @@ class Node(object):
     Treap's node
     Treap is a binary tree by value and heap by priority
     """
+
     def __init__(self, value: int = None):
         self.value = value
         self.prior = random()
@@ -32,6 +33,7 @@ class Node(object):
         left = str(self.left or "")
         right = str(self.right or "")
         return value + left + right
+
 
 def split(root: Node, value: int) -> Tuple[Node, Node]:
     """
@@ -61,6 +63,7 @@ def split(root: Node, value: int) -> Tuple[Node, Node]:
             root.right, right = split(root.right, value)
             return (root, right)
 
+
 def merge(left: Node, right: Node) -> Node:
     """
     We merge 2 trees into one.
@@ -82,6 +85,7 @@ def merge(left: Node, right: Node) -> Node:
         right.left = merge(left, right.left)
         return right
 
+
 def insert(root: Node, value: int) -> Node:
     """
     Insert element
@@ -94,6 +98,7 @@ def insert(root: Node, value: int) -> Node:
     left, right = split(root, value)
     return merge(merge(left, node), right)
 
+
 def erase(root: Node, value: int) -> Node:
     """
     Erase element
@@ -102,9 +107,10 @@ def erase(root: Node, value: int) -> Node:
     Split all nodes with values greater into right.
     Merge left, right
     """
-    left, right = split(root, value-1)
+    left, right = split(root, value - 1)
     _, right = split(right, value)
     return merge(left, right)
+
 
 def inorder(root: Node):
     """
@@ -126,19 +132,19 @@ def interactTreap(root, args):
 
         >>> root = interactTreap(None, "+1")
         >>> inorder(root)
-        1 
+        1
         >>> root = interactTreap(root, "+3 +5 +17 +19 +2 +16 +4 +0")
         >>> inorder(root)
-        0 1 2 3 4 5 16 17 19 
+        0 1 2 3 4 5 16 17 19
         >>> root = interactTreap(root, "+4 +4 +4")
         >>> inorder(root)
-        0 1 2 3 4 4 4 4 5 16 17 19 
+        0 1 2 3 4 4 4 4 5 16 17 19
         >>> root = interactTreap(root, "-0")
         >>> inorder(root)
-        1 2 3 4 4 4 4 5 16 17 19 
+        1 2 3 4 4 4 4 5 16 17 19
         >>> root = interactTreap(root, "-4")
         >>> inorder(root)
-        1 2 3 5 16 17 19 
+        1 2 3 5 16 17 19
         >>> root = interactTreap(root, "=0")
         Unknown command
     """
@@ -154,6 +160,7 @@ def interactTreap(root, args):
 
     return root
 
+
 def main():
     """After each command, program prints treap"""
     root = None
@@ -167,6 +174,7 @@ def main():
 
     print("good by!")
     pass
+
 
 if __name__ == "__main__":
     import doctest

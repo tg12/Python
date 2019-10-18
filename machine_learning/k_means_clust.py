@@ -89,7 +89,8 @@ def assign_clusters(data, centroids):
 def revise_centroids(data, k, cluster_assignment):
     new_centroids = []
     for i in range(k):
-        # Select all data points that belong to cluster i. Fill in the blank (RHS only)
+        # Select all data points that belong to cluster i. Fill in the blank
+        # (RHS only)
         member_data_points = data[cluster_assignment == i]
         # Compute the mean of the data points. Fill in the blank (RHS only)
         centroid = member_data_points.mean(axis=0)
@@ -104,10 +105,12 @@ def compute_heterogeneity(data, k, centroids, cluster_assignment):
     heterogeneity = 0.0
     for i in range(k):
 
-        # Select all data points that belong to cluster i. Fill in the blank (RHS only)
+        # Select all data points that belong to cluster i. Fill in the blank
+        # (RHS only)
         member_data_points = data[cluster_assignment == i, :]
 
-        if member_data_points.shape[0] > 0:  # check if i-th cluster is non-empty
+        # check if i-th cluster is non-empty
+        if member_data_points.shape[0] > 0:
             # Compute distances from centroid to data points (RHS only)
             distances = pairwise_distances(
                 member_data_points, [centroids[i]], metric="euclidean"
@@ -132,8 +135,12 @@ def plot_heterogeneity(heterogeneity, k):
 
 
 def kmeans(
-    data, k, initial_centroids, maxiter=500, record_heterogeneity=None, verbose=False
-):
+        data,
+        k,
+        initial_centroids,
+        maxiter=500,
+        record_heterogeneity=None,
+        verbose=False):
     """This function runs k-means on given data and initial set of centroids.
        maxiter: maximum number of iterations to run.(default=500)
        record_heterogeneity: (optional) a list, to store the history of heterogeneity as function of iterations
@@ -149,7 +156,8 @@ def kmeans(
         # 1. Make cluster assignments using nearest centroids
         cluster_assignment = assign_clusters(data, centroids)
 
-        # 2. Compute a new centroid for each of the k clusters, averaging all data points assigned to that cluster.
+        # 2. Compute a new centroid for each of the k clusters, averaging all
+        # data points assigned to that cluster.
         centroids = revise_centroids(data, k, cluster_assignment)
 
         # Check for convergence: if none of the assignments changed, stop
@@ -172,7 +180,8 @@ def kmeans(
         # Record heterogeneity convergence metric
         if record_heterogeneity is not None:
             # YOUR CODE HERE
-            score = compute_heterogeneity(data, k, centroids, cluster_assignment)
+            score = compute_heterogeneity(
+                data, k, centroids, cluster_assignment)
             record_heterogeneity.append(score)
 
         prev_cluster_assignment = cluster_assignment[:]

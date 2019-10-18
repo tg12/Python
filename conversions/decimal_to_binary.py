@@ -2,7 +2,6 @@
 
 
 def decimal_to_binary(num):
-
     """
         Convert a Integer Decimal Number to a Binary Number as str.
         >>> decimal_to_binary(0)
@@ -28,9 +27,9 @@ def decimal_to_binary(num):
         TypeError: 'str' object cannot be interpreted as an integer
     """
 
-    if type(num) == float:
+    if isinstance(num, float):
         raise TypeError("'float' object cannot be interpreted as an integer")
-    if type(num) == str:
+    if isinstance(num, str):
         raise TypeError("'str' object cannot be interpreted as an integer")
 
     if num == 0:

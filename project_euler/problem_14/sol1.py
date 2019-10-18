@@ -57,6 +57,8 @@ def solution(n):
 
 if __name__ == "__main__":
     result = solution(int(input().strip()))
-    print(
-        ("Largest Number:", result["largest_number"], "->", result["counter"], "digits")
-    )
+    print(("Largest Number:",
+           result["largest_number"],
+           "->",
+           result["counter"],
+           "digits"))

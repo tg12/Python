@@ -71,8 +71,10 @@ def PrimsAlgorithm(l):
         return temp
 
     visited = [0 for i in range(len(l))]
-    Nbr_TV = [-1 for i in range(len(l))]  # Neighboring Tree Vertex of selected vertex
-    # Minimum Distance of explored vertex with neighboring vertex of partial tree formed in graph
+    # Neighboring Tree Vertex of selected vertex
+    Nbr_TV = [-1 for i in range(len(l))]
+    # Minimum Distance of explored vertex with neighboring vertex of partial
+    # tree formed in graph
     Distance_TV = []  # Heap of Distance of vertices from their neighboring vertex
     Positions = []
 
@@ -96,9 +98,12 @@ def PrimsAlgorithm(l):
             TreeEdges.append((Nbr_TV[vertex], vertex))
             visited[vertex] = 1
             for v in l[vertex]:
-                if visited[v[0]] == 0 and v[1] < Distance_TV[getPosition(v[0])]:
+                if visited[v[0]
+                           ] == 0 and v[1] < Distance_TV[getPosition(v[0])]:
                     Distance_TV[getPosition(v[0])] = v[1]
-                    bottomToTop(v[1], getPosition(v[0]), Distance_TV, Positions)
+                    bottomToTop(
+                        v[1], getPosition(
+                            v[0]), Distance_TV, Positions)
                     Nbr_TV[v[0]] = vertex
     return TreeEdges
 

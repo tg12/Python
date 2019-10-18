@@ -25,7 +25,12 @@ def create_all_state(increment, total_number, level, current_list, total_list):
 
     for i in range(increment, total_number - level + 2):
         current_list.append(i)
-        create_all_state(i + 1, total_number, level - 1, current_list, total_list)
+        create_all_state(
+            i + 1,
+            total_number,
+            level - 1,
+            current_list,
+            total_list)
         current_list.pop()
 
 

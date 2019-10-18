@@ -25,7 +25,8 @@ class LinearCongruentialGenerator(object):
         The smallest number that can be generated is zero.
         The largest number that can be generated is modulo-1. modulo is set in the constructor.
         """
-        self.seed = (self.multiplier * self.seed + self.increment) % self.modulo
+        self.seed = (self.multiplier * self.seed +
+                     self.increment) % self.modulo
         return self.seed
 
 

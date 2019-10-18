@@ -22,7 +22,8 @@ class SegmentTree:
             mid = (l + r) // 2
             self.build(self.left(idx), l, mid)
             self.build(self.right(idx), mid + 1, r)
-            self.st[idx] = max(self.st[self.left(idx)], self.st[self.right(idx)])
+            self.st[idx] = max(self.st[self.left(idx)],
+                               self.st[self.right(idx)])
 
     def update(self, a, b, val):
         return self.update_recursive(1, 0, self.N - 1, a - 1, b - 1, val)

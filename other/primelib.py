@@ -150,7 +150,8 @@ def primeFactorization(number):
     """
 
     # precondition
-    assert isinstance(number, int) and number >= 0, "'number' must been an int and >= 0"
+    assert isinstance(
+        number, int) and number >= 0, "'number' must been an int and >= 0"
 
     ans = []  # this list will be returns of the function.
 
@@ -249,7 +250,9 @@ def isEven(number):
 
     # precondition
     assert isinstance(number, int), "'number' must been an int"
-    assert isinstance(number % 2 == 0, bool), "compare bust been from type bool"
+    assert isinstance(
+        number %
+        2 == 0, bool), "compare bust been from type bool"
 
     return number % 2 == 0
 
@@ -265,7 +268,9 @@ def isOdd(number):
 
     # precondition
     assert isinstance(number, int), "'number' must been an int"
-    assert isinstance(number % 2 != 0, bool), "compare bust been from type bool"
+    assert isinstance(
+        number %
+        2 != 0, bool), "compare bust been from type bool"
 
     return number % 2 != 0
 
@@ -510,9 +515,8 @@ def getPrimesBetween(pNumber1, pNumber2):
             number += 1
 
     # precondition
-    assert (
-        isinstance(ans, list) and ans[0] != pNumber1 and ans[len(ans) - 1] != pNumber2
-    ), "'ans' must been a list without the arguments"
+    assert (isinstance(ans, list) and ans[0] != pNumber1 and ans[len(
+        ans) - 1] != pNumber2), "'ans' must been a list without the arguments"
 
     # 'ans' contains not 'pNumber1' and 'pNumber2' !
     return ans
@@ -538,7 +542,8 @@ def getDivisors(n):
             ans.append(divisor)
 
     # precondition
-    assert ans[0] == 1 and ans[len(ans) - 1] == n, "Error in function getDivisiors(...)"
+    assert ans[0] == 1 and ans[len(ans) -
+                               1] == n, "Error in function getDivisiors(...)"
 
     return ans
 

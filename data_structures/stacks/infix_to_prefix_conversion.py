@@ -44,7 +44,8 @@ def infix_2_postfix(Infix):
             Stack.append(x)  # if x is "(" push to Stack
         elif x == ")":  # if x is ")" pop stack until "(" is encountered
             while Stack[-1] != "(":
-                Postfix.append(Stack.pop())  # Pop stack & add the content to Postfix
+                # Pop stack & add the content to Postfix
+                Postfix.append(Stack.pop())
             Stack.pop()
         else:
             if len(Stack) == 0:

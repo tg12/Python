@@ -19,12 +19,19 @@ def calc_derivative(f, a, h=0.001):
     return (f(a + h) - f(a - h)) / (2 * h)
 
 
-def newton_raphson(f, x0=0, maxiter=100, step=0.0001, maxerror=1e-6, logsteps=False):
+def newton_raphson(
+        f,
+        x0=0,
+        maxiter=100,
+        step=0.0001,
+        maxerror=1e-6,
+        logsteps=False):
 
     a = x0  # set the initial guess
     steps = [a]
     error = abs(f(a))
-    f1 = lambda x: calc_derivative(f, x, h=step)  # Derivative of f(x)
+
+    def f1(x): return calc_derivative(f, x, h=step)  # Derivative of f(x)
     for _ in range(maxiter):
         if f1(a) == 0:
             raise ValueError("No converging solution found")
@@ -34,7 +41,8 @@ def newton_raphson(f, x0=0, maxiter=100, step=0.0001, maxerror=1e-6, logsteps=Fa
         if error < maxerror:
             break
     else:
-        raise ValueError("Iteration limit reached, no converging solution found")
+        raise ValueError(
+            "Iteration limit reached, no converging solution found")
     if logsteps:
         # If logstep is true, then log intermediate steps
         return a, error, steps
@@ -44,7 +52,7 @@ def newton_raphson(f, x0=0, maxiter=100, step=0.0001, maxerror=1e-6, logsteps=Fa
 if __name__ == "__main__":
     import matplotlib.pyplot as plt
 
-    f = lambda x: m.tanh(x) ** 2 - m.exp(3 * x)
+    def f(x): return m.tanh(x) ** 2 - m.exp(3 * x)
     solution, error, steps = newton_raphson(
         f, x0=10, maxiter=1000, step=1e-6, logsteps=True
     )

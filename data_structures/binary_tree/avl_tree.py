@@ -30,7 +30,7 @@ class my_queue:
     def print(self):
         print(self.data)
         print("**************")
-        print(self.data[self.head : self.tail])
+        print(self.data[self.head: self.tail])
 
 
 class my_node:
@@ -90,8 +90,8 @@ def leftrotation(node):
         Bl  Br                 UB Br  C
        /
      UB
-  
-    UB = unbalanced node  
+
+    UB = unbalanced node
     """
     print("left rotation node:", node.getdata())
     ret = node.getleft()
@@ -121,11 +121,11 @@ def rightrotation(node):
 
 def rlrotation(node):
     r"""
-            A              A                    Br      
+            A              A                    Br
            / \            / \                  /  \
           B   C    RR    Br  C       LR       B    A
          / \       -->  /  \         -->    /     / \
-        Bl  Br         B   UB              Bl    UB  C  
+        Bl  Br         B   UB              Bl    UB  C
              \        /
              UB     Bl
     RR = rightrotation   LR = leftrotation
@@ -152,7 +152,8 @@ def insert_node(node, data):
             ):  # new node is the left child of the left child
                 node = leftrotation(node)
             else:
-                node = rlrotation(node)  # new node is the right child of the left child
+                # new node is the right child of the left child
+                node = rlrotation(node)
     else:
         node.setright(insert_node(node.getright(), data))
         if getheight(node.getright()) - getheight(node.getleft()) == 2:
@@ -201,12 +202,16 @@ def del_node(root, data):
     if root is None:
         return root
     if getheight(root.getright()) - getheight(root.getleft()) == 2:
-        if getheight(root.getright().getright()) > getheight(root.getright().getleft()):
+        if getheight(
+                root.getright().getright()) > getheight(
+                root.getright().getleft()):
             root = rightrotation(root)
         else:
             root = lrrotation(root)
     elif getheight(root.getright()) - getheight(root.getleft()) == -2:
-        if getheight(root.getleft().getleft()) > getheight(root.getleft().getright()):
+        if getheight(
+                root.getleft().getleft()) > getheight(
+                root.getleft().getright()):
             root = leftrotation(root)
         else:
             root = rlrotation(root)

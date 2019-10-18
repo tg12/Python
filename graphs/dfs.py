@@ -17,9 +17,9 @@ def dfs(graph, start):
        it off the stack."""
     explored, stack = set(), [start]
     while stack:
-        v = (
-            stack.pop()
-        )  # one difference from BFS is to pop last element here instead of first one
+        # one difference from BFS is to pop last element here instead of first
+        # one
+        v = (stack.pop())
 
         if v in explored:
             continue

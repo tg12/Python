@@ -30,8 +30,8 @@ logger.addHandler(stream_handler)
 
 @pytest.mark.mat_ops
 @pytest.mark.parametrize(
-    ("mat1", "mat2"), [(mat_a, mat_b), (mat_c, mat_d), (mat_d, mat_e), (mat_f, mat_h)]
-)
+    ("mat1", "mat2"), [
+        (mat_a, mat_b), (mat_c, mat_d), (mat_d, mat_e), (mat_f, mat_h)])
 def test_addition(mat1, mat2):
     if (np.array(mat1)).shape < (2, 2) or (np.array(mat2)).shape < (2, 2):
         with pytest.raises(TypeError):
@@ -50,8 +50,8 @@ def test_addition(mat1, mat2):
 
 @pytest.mark.mat_ops
 @pytest.mark.parametrize(
-    ("mat1", "mat2"), [(mat_a, mat_b), (mat_c, mat_d), (mat_d, mat_e), (mat_f, mat_h)]
-)
+    ("mat1", "mat2"), [
+        (mat_a, mat_b), (mat_c, mat_d), (mat_d, mat_e), (mat_f, mat_h)])
 def test_subtraction(mat1, mat2):
     if (np.array(mat1)).shape < (2, 2) or (np.array(mat2)).shape < (2, 2):
         with pytest.raises(TypeError):
@@ -70,8 +70,8 @@ def test_subtraction(mat1, mat2):
 
 @pytest.mark.mat_ops
 @pytest.mark.parametrize(
-    ("mat1", "mat2"), [(mat_a, mat_b), (mat_c, mat_d), (mat_d, mat_e), (mat_f, mat_h)]
-)
+    ("mat1", "mat2"), [
+        (mat_a, mat_b), (mat_c, mat_d), (mat_d, mat_e), (mat_f, mat_h)])
 def test_multiplication(mat1, mat2):
     if (np.array(mat1)).shape < (2, 2) or (np.array(mat2)).shape < (2, 2):
         logger.info(f"\n\t{test_multiplication.__name__} returned integer")

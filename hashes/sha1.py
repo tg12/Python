@@ -60,16 +60,16 @@ class SHA1Hash:
         Pads the input message with zeros so that padded_data has 64 bytes or 512 bits
         """
         padding = b"\x80" + b"\x00" * (63 - (len(self.data) + 8) % 64)
-        padded_data = self.data + padding + struct.pack(">Q", 8 * len(self.data))
+        padded_data = self.data + padding + \
+            struct.pack(">Q", 8 * len(self.data))
         return padded_data
 
     def split_blocks(self):
         """
         Returns a list of bytestrings each of length 64
         """
-        return [
-            self.padded_data[i : i + 64] for i in range(0, len(self.padded_data), 64)
-        ]
+        return [self.padded_data[i: i + 64]
+                for i in range(0, len(self.padded_data), 64)]
 
     # @staticmethod
     def expand_block(self, block):
@@ -79,7 +79,8 @@ class SHA1Hash:
         """
         w = list(struct.unpack(">16L", block)) + [0] * 64
         for i in range(16, 80):
-            w[i] = self.rotate((w[i - 3] ^ w[i - 8] ^ w[i - 14] ^ w[i - 16]), 1)
+            w[i] = self.rotate(
+                (w[i - 3] ^ w[i - 8] ^ w[i - 14] ^ w[i - 16]), 1)
         return w
 
     def final_hash(self):
@@ -133,7 +134,9 @@ class SHA1HashTest(unittest.TestCase):
 
     def testMatchHashes(self):
         msg = bytes("Test String", "utf-8")
-        self.assertEqual(SHA1Hash(msg).final_hash(), hashlib.sha1(msg).hexdigest())
+        self.assertEqual(
+            SHA1Hash(msg).final_hash(),
+            hashlib.sha1(msg).hexdigest())
 
 
 def main():
@@ -143,14 +146,18 @@ def main():
     the test each time.
     """
     # unittest.main()
-    parser = argparse.ArgumentParser(description="Process some strings or files")
+    parser = argparse.ArgumentParser(
+        description="Process some strings or files")
     parser.add_argument(
         "--string",
         dest="input_string",
         default="Hello World!! Welcome to Cryptography",
         help="Hash the string",
     )
-    parser.add_argument("--file", dest="input_file", help="Hash contents of a file")
+    parser.add_argument(
+        "--file",
+        dest="input_file",
+        help="Hash contents of a file")
     args = parser.parse_args()
     input_string = args.input_string
     # In any case hash input should be a bytestring

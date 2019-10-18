@@ -4,6 +4,8 @@ from sklearn.model_selection import train_test_split
 import doctest
 
 # different functions implementing different types of SVM's
+
+
 def NuSVC(train_x, train_y):
     svc_NuSVC = svm.NuSVC()
     svc_NuSVC.fit(train_x, train_y)
@@ -18,7 +20,8 @@ def Linearsvc(train_x, train_y):
 
 def SVC(train_x, train_y):
     # svm.SVC(C=1.0, kernel='rbf', degree=3, gamma=0.0, coef0=0.0, shrinking=True, probability=False,tol=0.001, cache_size=200, class_weight=None, verbose=False, max_iter=-1, random_state=None)
-    # various parameters like "kernal","gamma","C" can effectively tuned for a given machine learning model.
+    # various parameters like "kernal","gamma","C" can effectively tuned for a
+    # given machine learning model.
     SVC = svm.SVC(gamma="auto")
     SVC.fit(train_x, train_y)
     return SVC

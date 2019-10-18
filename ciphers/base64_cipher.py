@@ -18,7 +18,7 @@ def encode_base64(text):
     i = 0
     while i < len(s):
         if i > 0 and ((i / 3 * 4) % 76) == 0:
-            r = r + "\r\n" # for unix newline, put "\n"
+            r = r + "\r\n"  # for unix newline, put "\n"
 
         n = (s[i] << 16) + (s[i + 1] << 8) + s[i + 2]
 
@@ -27,10 +27,11 @@ def encode_base64(text):
         n3 = (n >> 6) & 63
         n4 = n & 63
 
-        r += base64_chars[n1] + base64_chars[n2] + base64_chars[n3] + base64_chars[n4]
+        r += base64_chars[n1] + base64_chars[n2] + \
+            base64_chars[n3] + base64_chars[n4]
         i += 3
 
-    return r[0 : len(r) - len(p)] + p
+    return r[0: len(r) - len(p)] + p
 
 
 def decode_base64(text):
@@ -72,11 +73,12 @@ def decode_base64(text):
             + base64_chars.index(s[i + 3])
         )
 
-        r += bytes([(n >> 16) & 255]) + bytes([(n >> 8) & 255]) + bytes([n & 255])
+        r += bytes([(n >> 16) & 255]) + \
+            bytes([(n >> 8) & 255]) + bytes([n & 255])
 
         i += 4
 
-    return str(r[0 : len(r) - len(p)], "utf-8")
+    return str(r[0: len(r) - len(p)], "utf-8")
 
 
 def main():

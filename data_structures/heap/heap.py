@@ -1,6 +1,8 @@
 #!/usr/bin/python
 
 # This heap class start from here.
+
+
 class Heap:
     def __init__(self):  # Default constructor of heap class.
         self.h = []
@@ -39,7 +41,8 @@ class Heap:
         for i in range(self.currsize // 2, -1, -1):
             self.maxHeapify(i)
 
-    def getMax(self):  # This function is used to get maximum value from the heap.
+    # This function is used to get maximum value from the heap.
+    def getMax(self):
         if self.currsize >= 1:
             me = self.h[0]
             temp = self.h[0]
@@ -60,7 +63,8 @@ class Heap:
             self.maxHeapify(0)
         self.currsize = size
 
-    def insert(self, data):  # This function is used to insert data in the heap.
+    # This function is used to insert data in the heap.
+    def insert(self, data):
         self.h.append(data)
         curr = self.currsize
         self.currsize += 1

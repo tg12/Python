@@ -80,7 +80,6 @@ def binary_search_std_lib(sorted_collection, item):
 
 
 def binary_search_by_recursion(sorted_collection, item, left, right):
-
     """Pure implementation of binary search algorithm in Python by recursion
 
     Be careful collection must be ascending sorted, otherwise result will be
@@ -112,9 +111,11 @@ def binary_search_by_recursion(sorted_collection, item, left, right):
     if sorted_collection[midpoint] == item:
         return midpoint
     elif sorted_collection[midpoint] > item:
-        return binary_search_by_recursion(sorted_collection, item, left, midpoint - 1)
+        return binary_search_by_recursion(
+            sorted_collection, item, left, midpoint - 1)
     else:
-        return binary_search_by_recursion(sorted_collection, item, midpoint + 1, right)
+        return binary_search_by_recursion(
+            sorted_collection, item, midpoint + 1, right)
 
 
 def __assert_sorted(collection):

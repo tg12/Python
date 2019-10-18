@@ -42,7 +42,8 @@ def random_characters(ctbi, i):
 
 
 def main():
-    length = int(input("Please indicate the max length of your password: ").strip())
+    length = int(
+        input("Please indicate the max length of your password: ").strip())
     print("Password generated:", password_generator(length))
     print("[If you are thinking of using this passsword, You better save it.]")
 

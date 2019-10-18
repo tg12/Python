@@ -152,20 +152,21 @@ def expand_state(
                 back_pointer[neighbours] = -1
                 g_function[neighbours] = float("inf")
 
-            if valid(neighbours) and g_function[neighbours] > g_function[s] + 1:
+            if valid(
+                    neighbours) and g_function[neighbours] > g_function[s] + 1:
                 g_function[neighbours] = g_function[s] + 1
                 back_pointer[neighbours] = s
                 if neighbours not in close_list_anchor:
-                    open_list[0].put(neighbours, key(neighbours, 0, goal, g_function))
+                    open_list[0].put(
+                        neighbours, key(
+                            neighbours, 0, goal, g_function))
                     if neighbours not in close_list_inad:
                         for var in range(1, n_hueristic):
-                            if key(neighbours, var, goal, g_function) <= W2 * key(
-                                neighbours, 0, goal, g_function
-                            ):
+                            if key(neighbours, var, goal, g_function) <= W2 * \
+                                    key(neighbours, 0, goal, g_function):
                                 # print("why not plssssssssss")
-                                open_list[j].put(
-                                    neighbours, key(neighbours, var, goal, g_function)
-                                )
+                                open_list[j].put(neighbours, key(
+                                    neighbours, var, goal, g_function))
 
     # print
 

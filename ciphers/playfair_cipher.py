@@ -46,7 +46,8 @@ def generate_table(key):
     # for setting up the table and doing the actual encoding/decoding simpler
     table = []
 
-    # copy key chars into the table if they are in `alphabet` ignoring duplicates
+    # copy key chars into the table if they are in `alphabet` ignoring
+    # duplicates
     for char in key.upper():
         if char not in table and char in alphabet:
             table.append(char)

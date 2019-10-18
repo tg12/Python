@@ -49,7 +49,6 @@ def interpolation_search(sorted_collection, item):
 
 
 def interpolation_search_by_recursion(sorted_collection, item, left, right):
-
     """Pure implementation of interpolation search algorithm in Python by recursion
     Be careful collection must be ascending sorted, otherwise result will be
     unpredictable
@@ -77,9 +76,11 @@ def interpolation_search_by_recursion(sorted_collection, item, left, right):
     if sorted_collection[point] == item:
         return point
     elif point < left:
-        return interpolation_search_by_recursion(sorted_collection, item, point, left)
+        return interpolation_search_by_recursion(
+            sorted_collection, item, point, left)
     elif point > right:
-        return interpolation_search_by_recursion(sorted_collection, item, right, left)
+        return interpolation_search_by_recursion(
+            sorted_collection, item, right, left)
     else:
         if sorted_collection[point] > item:
             return interpolation_search_by_recursion(
@@ -130,7 +131,8 @@ if __name__ == "__main__":
         try:
             __assert_sorted(collection)
         except ValueError:
-            sys.exit("Sequence must be ascending sorted to apply interpolation search")
+            sys.exit(
+                "Sequence must be ascending sorted to apply interpolation search")
         target = 67
 
     result = interpolation_search(collection, target)

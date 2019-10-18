@@ -1,4 +1,7 @@
-# Kahn's Algorithm is used to find Topological ordering of Directed Acyclic Graph using BFS
+# Kahn's Algorithm is used to find Topological ordering of Directed
+# Acyclic Graph using BFS
+
+
 def topologicalSort(l):
     indegree = [0] * len(l)
     queue = []

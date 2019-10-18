@@ -22,8 +22,14 @@ import matplotlib.pyplot as plt
 
 class CNN:
     def __init__(
-        self, conv1_get, size_p1, bp_num1, bp_num2, bp_num3, rate_w=0.2, rate_t=0.2
-    ):
+            self,
+            conv1_get,
+            size_p1,
+            bp_num1,
+            bp_num2,
+            bp_num3,
+            rate_w=0.2,
+            rate_t=0.2):
         """
         :param conv1_get: [a,c,d]，size, number, step of convolution kernel
         :param size_p1: pooling size
@@ -45,8 +51,10 @@ class CNN:
             np.mat(-1 * np.random.rand(self.conv1[0], self.conv1[0]) + 0.5)
             for i in range(self.conv1[1])
         ]
-        self.wkj = np.mat(-1 * np.random.rand(self.num_bp3, self.num_bp2) + 0.5)
-        self.vji = np.mat(-1 * np.random.rand(self.num_bp2, self.num_bp1) + 0.5)
+        self.wkj = np.mat(-1 * np.random.rand(self.num_bp3,
+                                              self.num_bp2) + 0.5)
+        self.vji = np.mat(-1 * np.random.rand(self.num_bp2,
+                                              self.num_bp1) + 0.5)
         self.thre_conv1 = -2 * np.random.rand(self.conv1[1]) + 1
         self.thre_bp2 = -2 * np.random.rand(self.num_bp2) + 1
         self.thre_bp3 = -2 * np.random.rand(self.num_bp3) + 1
@@ -115,10 +123,11 @@ class CNN:
         for i_focus in range(0, size_data - size_conv + 1, conv_step):
             for j_focus in range(0, size_data - size_conv + 1, conv_step):
                 focus = data[
-                    i_focus : i_focus + size_conv, j_focus : j_focus + size_conv
+                    i_focus: i_focus + size_conv, j_focus: j_focus + size_conv
                 ]
                 data_focus.append(focus)
-        # caculate the feature map of every single kernel, and saved as list of matrix
+        # caculate the feature map of every single kernel, and saved as list of
+        # matrix
         data_featuremap = []
         Size_FeatureMap = int((size_data - size_conv) / conv_step + 1)
         for i_map in range(num_conv):
@@ -152,8 +161,8 @@ class CNN:
             for i_focus in range(0, size_map, size_pooling):
                 for j_focus in range(0, size_map, size_pooling):
                     focus = map[
-                        i_focus : i_focus + size_pooling,
-                        j_focus : j_focus + size_pooling,
+                        i_focus: i_focus + size_pooling,
+                        j_focus: j_focus + size_pooling,
                     ]
                     if type == "average_pool":
                         # average pooling
@@ -161,7 +170,8 @@ class CNN:
                     elif type == "max_pooling":
                         # max pooling
                         map_pooled.append(np.max(focus))
-            map_pooled = np.asmatrix(map_pooled).reshape(size_pooled, size_pooled)
+            map_pooled = np.asmatrix(map_pooled).reshape(
+                size_pooled, size_pooled)
             featuremap_pooled.append(map_pooled)
         return featuremap_pooled
 
@@ -198,9 +208,8 @@ class CNN:
             pd_conv1 = np.ones((size_map, size_map))
             for i in range(0, size_map, size_pooling):
                 for j in range(0, size_map, size_pooling):
-                    pd_conv1[i : i + size_pooling, j : j + size_pooling] = pd_pool[
-                        i_pool
-                    ]
+                    pd_conv1[i: i + size_pooling, j: j +
+                             size_pooling] = pd_pool[i_pool]
                     i_pool = i_pool + 1
             pd_conv2 = np.multiply(
                 pd_conv1, np.multiply(out_map[i_map], (1 - out_map[i_map]))
@@ -209,8 +218,13 @@ class CNN:
         return pd_all
 
     def train(
-        self, patterns, datas_train, datas_teach, n_repeat, error_accuracy, draw_e=bool
-    ):
+            self,
+            patterns,
+            datas_train,
+            datas_teach,
+            n_repeat,
+            error_accuracy,
+            draw_e=bool):
         # model traning
         print("----------------------Start Training-------------------------")
         print((" - - Shape: Train_Data  ", np.shape(datas_train)))
@@ -253,11 +267,13 @@ class CNN:
                     (data_teach - bp_out3), np.multiply(bp_out3, (1 - bp_out3))
                 )
                 pd_j_all = np.multiply(
-                    np.dot(pd_k_all, self.wkj), np.multiply(bp_out2, (1 - bp_out2))
-                )
+                    np.dot(
+                        pd_k_all, self.wkj), np.multiply(
+                        bp_out2, (1 - bp_out2)))
                 pd_i_all = np.dot(pd_j_all, self.vji)
 
-                pd_conv1_pooled = pd_i_all / (self.size_pooling1 * self.size_pooling1)
+                pd_conv1_pooled = pd_i_all / \
+                    (self.size_pooling1 * self.size_pooling1)
                 pd_conv1_pooled = pd_conv1_pooled.T.getA().tolist()
                 pd_conv1_all = self._calculate_gradient_from_pool(
                     data_conved1,
@@ -270,11 +286,11 @@ class CNN:
                 # convolution layer
                 for k_conv in range(self.conv1[1]):
                     pd_conv_list = self._expand_mat(pd_conv1_all[k_conv])
-                    delta_w = self.rate_weight * np.dot(pd_conv_list, data_focus1)
+                    delta_w = self.rate_weight * \
+                        np.dot(pd_conv_list, data_focus1)
 
-                    self.w_conv1[k_conv] = self.w_conv1[k_conv] + delta_w.reshape(
-                        (self.conv1[0], self.conv1[0])
-                    )
+                    self.w_conv1[k_conv] = self.w_conv1[k_conv] + \
+                        delta_w.reshape((self.conv1[0], self.conv1[0]))
 
                     self.thre_conv1[k_conv] = (
                         self.thre_conv1[k_conv]
@@ -336,7 +352,8 @@ class CNN:
         return np.asarray(res)
 
     def convolution(self, data):
-        # return the data of image after convoluting process so we can check it out
+        # return the data of image after convoluting process so we can check it
+        # out
         data_test = np.asmatrix(data)
         data_focus1, data_conved1 = self.convolute(
             data_test,

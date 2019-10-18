@@ -61,7 +61,8 @@ class HashTable:
         survivor_values = [value for value in self.values if value is not None]
         self.size_table = next_prime(self.size_table, factor=2)
         self._keys.clear()
-        self.values = [None] * self.size_table  # hell's pointers D: don't DRY ;/
+        # hell's pointers D: don't DRY ;/
+        self.values = [None] * self.size_table
         map(self.insert_data, survivor_values)
 
     def insert_data(self, data):

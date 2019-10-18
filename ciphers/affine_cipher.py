@@ -1,4 +1,6 @@
-import sys, random, cryptomath_module as cryptoMath
+import sys
+import random
+import cryptomath_module as cryptoMath
 
 SYMBOLS = r""" !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~"""
 
@@ -39,9 +41,8 @@ def checkKeys(keyA, keyB, mode):
         )
     if cryptoMath.gcd(keyA, len(SYMBOLS)) != 1:
         sys.exit(
-            "Key A %s and the symbol set size %s are not relatively prime. Choose a different key."
-            % (keyA, len(SYMBOLS))
-        )
+            "Key A %s and the symbol set size %s are not relatively prime. Choose a different key." %
+            (keyA, len(SYMBOLS)))
 
 
 def encryptMessage(key, message):
@@ -73,7 +74,8 @@ def decryptMessage(key, message):
     for symbol in message:
         if symbol in SYMBOLS:
             symIndex = SYMBOLS.find(symbol)
-            plainText += SYMBOLS[(symIndex - keyB) * modInverseOfkeyA % len(SYMBOLS)]
+            plainText += SYMBOLS[(symIndex - keyB) *
+                                 modInverseOfkeyA % len(SYMBOLS)]
         else:
             plainText += symbol
     return plainText

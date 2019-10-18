@@ -217,9 +217,7 @@ def tabu_search(
                 i = i + 1
 
             if [first_exchange_node, second_exchange_node] not in tabu_list and [
-                second_exchange_node,
-                first_exchange_node,
-            ] not in tabu_list:
+                    second_exchange_node, first_exchange_node, ] not in tabu_list:
                 tabu_list.append([first_exchange_node, second_exchange_node])
                 found = True
                 solution = best_solution[:-1]
@@ -254,7 +252,10 @@ def main(args=None):
         args.Size,
     )
 
-    print("Best solution: {0}, with total distance: {1}.".format(best_sol, best_cost))
+    print(
+        "Best solution: {0}, with total distance: {1}.".format(
+            best_sol,
+            best_cost))
 
 
 if __name__ == "__main__":

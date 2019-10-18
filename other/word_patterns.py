@@ -1,4 +1,5 @@
-import pprint, time
+import pprint
+import time
 
 
 def getWordPattern(word):

@@ -46,7 +46,7 @@ def solution(n):
     if n <= 0:
         raise ValueError("Parameter n must be greater or equal to one.")
     i = 0
-    while 1:
+    while True:
         i += n * (n - 1)
         nfound = 0
         for j in range(2, n):

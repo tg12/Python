@@ -98,6 +98,7 @@ if __name__ == "__main__":
 
     print()
     print("The minimum Edit Distance is: %d" % (solver.solve(S1, S2)))
-    print("The minimum Edit Distance is: %d" % (min_distance_bottom_up(S1, S2)))
+    print("The minimum Edit Distance is: %d" %
+          (min_distance_bottom_up(S1, S2)))
     print()
     print("*************** End of Testing Edit Distance DP Algorithm ***************")

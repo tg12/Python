@@ -34,7 +34,8 @@ def solution():
     with open(wordsFilePath, "r") as f:
         words = f.readline()
 
-    words = list(map(lambda word: word.strip('"'), words.strip("\r\n").split(",")))
+    words = list(map(lambda word: word.strip(
+        '"'), words.strip("\r\n").split(",")))
     words = list(
         filter(
             lambda word: word in TRIANGULAR_NUMBERS,

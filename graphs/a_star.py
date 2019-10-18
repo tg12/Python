@@ -14,7 +14,8 @@ heuristic = [[9, 8, 7, 6, 5, 4],
              [5, 4, 3, 2, 1, 0]]"""
 
 init = [0, 0]
-goal = [len(grid) - 1, len(grid[0]) - 1]  # all coordinates are given in format [y,x]
+# all coordinates are given in format [y,x]
+goal = [len(grid) - 1, len(grid[0]) - 1]
 cost = 1
 
 # the cost map which pushes the path closer to the goal
@@ -27,7 +28,8 @@ for i in range(len(grid)):
 
 
 # the actions we can take
-delta = [[-1, 0], [0, -1], [1, 0], [0, 1]]  # go up  # go left  # go down  # go right
+# go up  # go left  # go down  # go right
+delta = [[-1, 0], [0, -1], [1, 0], [0, 1]]
 
 
 # function to search the path
@@ -66,10 +68,12 @@ def search(grid, init, goal, cost, heuristic):
             if x == goal[0] and y == goal[1]:
                 found = True
             else:
-                for i in range(len(delta)):  # to try out different valid actions
+                for i in range(
+                        len(delta)):  # to try out different valid actions
                     x2 = x + delta[i][0]
                     y2 = y + delta[i][1]
-                    if x2 >= 0 and x2 < len(grid) and y2 >= 0 and y2 < len(grid[0]):
+                    if x2 >= 0 and x2 < len(
+                            grid) and y2 >= 0 and y2 < len(grid[0]):
                         if closed[x2][y2] == 0 and grid[x2][y2] == 0:
                             g2 = g + cost
                             f2 = g2 + heuristic[x2][y2]

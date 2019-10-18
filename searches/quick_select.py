@@ -26,7 +26,8 @@ def _partition(data, pivot):
 
 
 def quickSelect(list, k):
-    # k = len(list) // 2 when trying to find the median (index that value would be when list is sorted)
+    # k = len(list) // 2 when trying to find the median (index that value
+    # would be when list is sorted)
 
     # invalid input
     if k >= len(list) or k < 0:

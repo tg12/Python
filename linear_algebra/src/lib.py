@@ -28,10 +28,10 @@ import random
 class Vector(object):
     """
         This class represents a vector of arbitrary size.
-        You need to give the vector components. 
-        
+        You need to give the vector components.
+
         Overview about the methods:
-        
+
         constructor(components : list) : init the vector
         set(components : list) : changes the vector components.
         __str__() : toString method
@@ -77,7 +77,8 @@ class Vector(object):
             input: index (start at 0)
             output: the i-th component of the vector.
         """
-        if type(i) is int and -len(self.__components) <= i < len(self.__components):
+        if isinstance(i, int) and - \
+                len(self.__components) <= i < len(self.__components):
             return self.__components[i]
         else:
             raise Exception("index out of range")
@@ -105,7 +106,8 @@ class Vector(object):
         """
         size = len(self)
         if size == len(other):
-            result = [self.__components[i] + other.component(i) for i in range(size)]
+            result = [self.__components[i] +
+                      other.component(i) for i in range(size)]
             return Vector(result)
         else:
             raise Exception("must have the same size")
@@ -118,14 +120,15 @@ class Vector(object):
         """
         size = len(self)
         if size == len(other):
-            result = [self.__components[i] - other.component(i) for i in range(size)]
+            result = [self.__components[i] -
+                      other.component(i) for i in range(size)]
             return result
         else:  # error case
             raise Exception("must have the same size")
 
     def __mul__(self, other):
         """
-            mul implements the scalar multiplication 
+            mul implements the scalar multiplication
             and the dot-product
         """
         if isinstance(other, float) or isinstance(other, int):
@@ -168,7 +171,7 @@ def zeroVector(dimension):
 
 def unitBasisVector(dimension, pos):
     """
-        returns a unit basis vector with a One 
+        returns a unit basis vector with a One
         at index 'pos' (indexing at 0)
     """
     # precondition
@@ -197,7 +200,7 @@ def randomVector(N, a, b):
     """
         input: size (N) of the vector.
                random range (a,b)
-        output: returns a random vector of size N, with 
+        output: returns a random vector of size N, with
                 random integer components between 'a' and 'b'.
     """
     random.seed(None)
@@ -209,10 +212,10 @@ class Matrix(object):
     """
     class: Matrix
     This class represents a arbitrary matrix.
-    
+
     Overview about the methods:
-    
-           __str__() : returns a string representation 
+
+           __str__() : returns a string representation
            operator * : implements the matrix vector multiplication
                         implements the matrix-scalar multiplication.
            changeComponent(x,y,value) : changes the specified component.

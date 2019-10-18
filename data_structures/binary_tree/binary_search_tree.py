@@ -91,7 +91,8 @@ class BinarySearchTree:
                     tmpNode = self.getMax(node.getLeft())
                     # Deletes the tmpNode
                     self.delete(tmpNode.getLabel())
-                    # Assigns the value to the node to delete and keesp tree structure
+                    # Assigns the value to the node to delete and keesp tree
+                    # structure
                     node.setLabel(tmpNode.getLabel())
 
     def getNode(self, label):

@@ -15,6 +15,8 @@ import numpy as np
 """
 
 # Mean Absolute Error
+
+
 def mae(predict, actual):
     """
     Examples(rounded for precision):

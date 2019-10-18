@@ -131,7 +131,7 @@ class MinHeap:
         self.sift_up(self.idx_of_element[node])
 
 
-## USAGE
+# USAGE
 
 r = Node("R", -1)
 b = Node("B", 6)

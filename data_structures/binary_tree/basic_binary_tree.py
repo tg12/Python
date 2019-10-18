@@ -43,7 +43,9 @@ def is_full_binary_tree(
     if (tree.left is None) and (tree.right is None):
         return True
     if (tree.left is not None) and (tree.right is not None):
-        return is_full_binary_tree(tree.left) and is_full_binary_tree(tree.right)
+        return is_full_binary_tree(
+            tree.left) and is_full_binary_tree(
+            tree.right)
     else:
         return False
 

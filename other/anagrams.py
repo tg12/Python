@@ -1,4 +1,7 @@
-import collections, pprint, time, os
+import collections
+import pprint
+import time
+import os
 
 start_time = time.time()
 print("creating word list...")
@@ -21,7 +24,8 @@ def anagram(myword):
 
 
 print("finding anagrams...")
-all_anagrams = {word: anagram(word) for word in word_list if len(anagram(word)) > 1}
+all_anagrams = {word: anagram(word)
+                for word in word_list if len(anagram(word)) > 1}
 
 print("writing anagrams to file...")
 with open("anagrams.txt", "w") as file:

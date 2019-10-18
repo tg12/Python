@@ -64,9 +64,8 @@ class FilesArray(object):
         self.buffers = {i: None for i in range(self.num_buffers)}
 
     def get_dict(self):
-        return {
-            i: self.buffers[i] for i in range(self.num_buffers) if i not in self.empty
-        }
+        return {i: self.buffers[i] for i in range(
+            self.num_buffers) if i not in self.empty}
 
     def refresh(self):
         for i in range(self.num_buffers):
@@ -120,7 +119,10 @@ class ExternalSort(object):
 
         merger = FileMerger(NWayMerge())
         buffer_size = self.block_size / (num_blocks + 1)
-        merger.merge(splitter.get_block_filenames(), filename + ".out", buffer_size)
+        merger.merge(
+            splitter.get_block_filenames(),
+            filename + ".out",
+            buffer_size)
 
         splitter.cleanup()
 
@@ -142,8 +144,10 @@ def parse_memory(string):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "-m", "--mem", help="amount of memory to use for sorting", default="100M"
-    )
+        "-m",
+        "--mem",
+        help="amount of memory to use for sorting",
+        default="100M")
     parser.add_argument(
         "filename", metavar="<filename>", nargs=1, help="name of file to sort"
     )

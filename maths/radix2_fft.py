@@ -12,36 +12,36 @@ class FFT:
 
     Reference:
     https://en.wikipedia.org/wiki/Cooley%E2%80%93Tukey_FFT_algorithm#The_radix-2_DIT_case
-        
-    For polynomials of degree m and n the algorithms has complexity 
+
+    For polynomials of degree m and n the algorithms has complexity
     O(n*logn + m*logm)
-        
+
     The main part of the algorithm is split in two parts:
-        1) __DFT: We compute the discrete fourier transform (DFT) of A and B using a 
-        bottom-up dynamic approach - 
+        1) __DFT: We compute the discrete fourier transform (DFT) of A and B using a
+        bottom-up dynamic approach -
         2) __multiply: Once we obtain the DFT of A*B, we can similarly
         invert it to obtain A*B
 
-    The class FFT takes two polynomials A and B with complex coefficients as arguments; 
+    The class FFT takes two polynomials A and B with complex coefficients as arguments;
     The two polynomials should be represented as a sequence of coefficients starting
-    from the free term. Thus, for instance x + 2*x^3 could be represented as 
-    [0,1,0,2] or (0,1,0,2). The constructor adds some zeros at the end so that the 
-    polynomials have the same length which is a power of 2 at least the length of 
-    their product. 
-    
+    from the free term. Thus, for instance x + 2*x^3 could be represented as
+    [0,1,0,2] or (0,1,0,2). The constructor adds some zeros at the end so that the
+    polynomials have the same length which is a power of 2 at least the length of
+    their product.
+
     Example:
-     
+
     Create two polynomials as sequences
     >>> A = [0, 1, 0, 2]  # x+2x^3
     >>> B = (2, 3, 4, 0)  # 2+3x+4x^2
-    
+
     Create an FFT object with them
     >>> x = FFT(A, B)
-    
+
     Print product
     >>> print(x.product)  # 2x + 3x^2 + 8x^3 + 4x^4 + 6x^5
     [(-0+0j), (2+0j), (3+0j), (8+0j), (6+0j), (8+0j)]
-    
+
     __str__ test
     >>> print(x)
     A = 0*x^0 + 1*x^1 + 2*x^0 + 3*x^2
@@ -97,13 +97,15 @@ class FFT:
             current_root = 1
             for j in range(self.C_max_length // (next_ncol * 2)):
                 for i in range(next_ncol):
-                    new_dft[i].append(dft[i][j] + current_root * dft[i + next_ncol][j])
+                    new_dft[i].append(
+                        dft[i][j] + current_root * dft[i + next_ncol][j])
                 current_root *= root
             # Second half of next step
             current_root = 1
             for j in range(self.C_max_length // (next_ncol * 2)):
                 for i in range(next_ncol):
-                    new_dft[i].append(dft[i][j] - current_root * dft[i + next_ncol][j])
+                    new_dft[i].append(
+                        dft[i][j] - current_root * dft[i + next_ncol][j])
                 current_root *= root
             # Update
             dft = new_dft
@@ -151,7 +153,14 @@ class FFT:
             inverseC = new_inverseC
             next_ncol *= 2
         # Unpack
-        inverseC = [round(x[0].real, 8) + round(x[0].imag, 8) * 1j for x in inverseC]
+        inverseC = [
+            round(
+                x[0].real,
+                8) +
+            round(
+                x[0].imag,
+                8) *
+            1j for x in inverseC]
 
         # Remove leading 0's
         while inverseC[-1] == 0:

@@ -1,7 +1,8 @@
 import os
 import random
 import sys
-import rabin_miller as rabinMiller, cryptomath_module as cryptoMath
+import rabin_miller as rabinMiller
+import cryptomath_module as cryptoMath
 
 min_primitive_root = 3
 
@@ -31,7 +32,8 @@ def generateKey(keySize):
     print("Generating prime p...")
     p = rabinMiller.generateLargePrime(keySize)  # select large prime number.
     e_1 = primitiveRoot(p)  # one primitive root on modulo p.
-    d = random.randrange(3, p)  # private_key -> have to be greater than 2 for safety.
+    # private_key -> have to be greater than 2 for safety.
+    d = random.randrange(3, p)
     e_2 = cryptoMath.findModInverse(pow(e_1, d, p), p)
 
     publicKey = (keySize, e_1, e_2, p)
@@ -47,17 +49,19 @@ def makeKeyFiles(name, keySize):
         print("\nWARNING:")
         print(
             '"%s_pubkey.txt" or "%s_privkey.txt" already exists. \n'
-            "Use a different name or delete these files and re-run this program."
-            % (name, name)
-        )
+            "Use a different name or delete these files and re-run this program." %
+            (name, name))
         sys.exit()
 
     publicKey, privateKey = generateKey(keySize)
     print("\nWriting public key to file %s_pubkey.txt..." % name)
     with open("%s_pubkey.txt" % name, "w") as fo:
         fo.write(
-            "%d,%d,%d,%d" % (publicKey[0], publicKey[1], publicKey[2], publicKey[3])
-        )
+            "%d,%d,%d,%d" %
+            (publicKey[0],
+             publicKey[1],
+             publicKey[2],
+             publicKey[3]))
 
     print("Writing private key to file %s_privkey.txt..." % name)
     with open("%s_privkey.txt" % name, "w") as fo:

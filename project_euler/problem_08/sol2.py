@@ -57,13 +57,13 @@ N = (
 def solution(n):
     """Find the thirteen adjacent digits in the 1000-digit number n that have
     the greatest product and returns it.
- 
+
     >>> solution(N)
     23514624000
     """
     return max(
         [
-            reduce(lambda x, y: int(x) * int(y), n[i : i + 13])
+            reduce(lambda x, y: int(x) * int(y), n[i: i + 13])
             for i in range(len(n) - 12)
         ]
     )

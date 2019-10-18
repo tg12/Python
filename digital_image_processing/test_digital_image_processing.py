@@ -16,6 +16,8 @@ img = imread(r"digital_image_processing/image_data/lena_small.jpg")
 gray = cvtColor(img, COLOR_BGR2GRAY)
 
 # Test: change_contrast()
+
+
 def test_change_contrast():
     with Image.open("digital_image_processing/image_data/lena_small.jpg") as img:
         # Work around assertion for response

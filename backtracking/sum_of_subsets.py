@@ -1,8 +1,8 @@
 """
-	The sum-of-subsetsproblem states that a set of non-negative integers, and a value M, 
+	The sum-of-subsetsproblem states that a set of non-negative integers, and a value M,
 	determine all possible subsets of the given set whose summation sum equal to given M.
 
-	Summation of the chosen numbers must be equal to given number M and one number can 
+	Summation of the chosen numbers must be equal to given number M and one number can
 	be used only once.
 """
 
@@ -12,18 +12,30 @@ def generate_sum_of_subsets_soln(nums, max_sum):
     path = []
     num_index = 0
     remaining_nums_sum = sum(nums)
-    create_state_space_tree(nums, max_sum, num_index, path, result, remaining_nums_sum)
+    create_state_space_tree(
+        nums,
+        max_sum,
+        num_index,
+        path,
+        result,
+        remaining_nums_sum)
     return result
 
 
-def create_state_space_tree(nums, max_sum, num_index, path, result, remaining_nums_sum):
+def create_state_space_tree(
+        nums,
+        max_sum,
+        num_index,
+        path,
+        result,
+        remaining_nums_sum):
     """
-	Creates a state space tree to iterate through each branch using DFS.
-	It terminates the branching of a node when any of the two conditions 
-	given below satisfy.
-	This algorithm follows depth-fist-search and backtracks when the node is not branchable.
+        Creates a state space tree to iterate through each branch using DFS.
+        It terminates the branching of a node when any of the two conditions
+        given below satisfy.
+        This algorithm follows depth-fist-search and backtracks when the node is not branchable.
 
-	"""
+        """
     if sum(path) > max_sum or (remaining_nums_sum + sum(path)) < max_sum:
         return
     if sum(path) == max_sum:
@@ -41,7 +53,7 @@ def create_state_space_tree(nums, max_sum, num_index, path, result, remaining_nu
 
 
 """
-remove the comment to take an input from the user 
+remove the comment to take an input from the user
 
 print("Enter the elements")
 nums = list(map(int, input().split()))

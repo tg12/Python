@@ -18,7 +18,13 @@ class RedBlackTree:
     terms of the size of the tree.
     """
 
-    def __init__(self, label=None, color=0, parent=None, left=None, right=None):
+    def __init__(
+            self,
+            label=None,
+            color=0,
+            parent=None,
+            left=None,
+            right=None):
         """Initialize a new Red-Black Tree node with the given values:
             label: The value associated with this node
             color: 0 if black, 1 if red
@@ -468,13 +474,8 @@ class RedBlackTree:
 
         if self.left is None and self.right is None:
             return "'%s %s'" % (self.label, (self.color and "red") or "blk")
-        return pformat(
-            {
-                "%s %s"
-                % (self.label, (self.color and "red") or "blk"): (self.left, self.right)
-            },
-            indent=1,
-        )
+        return pformat({"%s %s" % (self.label, (self.color and "red") or "blk"): (
+            self.left, self.right)}, indent=1, )
 
     def __eq__(self, other):
         """Test if two trees are equal."""
@@ -528,7 +529,8 @@ def test_rotations():
     right_rot.right.left = RedBlackTree(-5, parent=right_rot.right)
     right_rot.right.right = RedBlackTree(10, parent=right_rot.right)
     right_rot.right.right.left = RedBlackTree(5, parent=right_rot.right.right)
-    right_rot.right.right.right = RedBlackTree(20, parent=right_rot.right.right)
+    right_rot.right.right.right = RedBlackTree(
+        20, parent=right_rot.right.right)
     if tree != right_rot:
         return False
     return True

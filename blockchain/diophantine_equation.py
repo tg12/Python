@@ -1,5 +1,6 @@
 # Diophantine Equation : Given integers a,b,c ( at least one of a and b != 0), the diophantine equation
-# a*x + b*y = c has a solution (where x and y are integers) iff gcd(a,b) divides c.
+# a*x + b*y = c has a solution (where x and y are integers) iff gcd(a,b)
+# divides c.
 
 # GCD ( Greatest Common Divisor ) or HCF ( Highest Common Factor )
 
@@ -30,7 +31,8 @@ def diophantine(a, b, c):
 # Finding All solutions of Diophantine Equations:
 
 # Theorem : Let gcd(a,b) = d, a = d*p, b = d*q. If (x0,y0) is a solution of Diophantine Equation a*x + b*y = c.
-# a*x0 + b*y0 = c, then all the solutions have the form a(x0 + t*q) + b(y0 - t*p) = c, where t is an arbitrary integer.
+# a*x0 + b*y0 = c, then all the solutions have the form a(x0 + t*q) + b(y0
+# - t*p) = c, where t is an arbitrary integer.
 
 # n is the number of solution you want, n = 2 by default
 
@@ -91,7 +93,8 @@ def greatest_common_divisor(a, b):
     return b
 
 
-# Extended Euclid's Algorithm : If d divides a and b and d = a*x + b*y for integers x and y, then d = gcd(a,b)
+# Extended Euclid's Algorithm : If d divides a and b and d = a*x + b*y for
+# integers x and y, then d = gcd(a,b)
 
 
 def extended_gcd(a, b):
